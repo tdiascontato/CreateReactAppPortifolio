@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleAbout} from './StyleAbout.js';
-import {MemoryGame} from '../components/MemoryGame/MemoryGame.js'
+import OldGame from '../components/OldGame/OldGame.js'
 import Logo from '../img/logo.png';
 
 export default function About(){
@@ -12,10 +12,10 @@ export default function About(){
                     <section className='Left'>
                         <img src={Logo} alt=""/>
                         <h2>Sou o Tiago, estudo Typescript e PHP desde que decidi sair do Magistério.</h2>
-                        <h2>Tudo começou com um jogo da memória!</h2>
-                        <h2>Utilizava muito o jogo da memória para ensinar matemática e fazer Javascript me deixou empolgado!</h2>
+                        <h2>Tudo começou com um jogo da velha!</h2>
+                        <h2>Me senti desafiado quando tentava montar um jogo da velha em Javascript Vanilla e hoje estudo para resolver outros!</h2>
                     </section>
-                    <section className='Right'><MemoryGame /></section>
+                    <section className='Right'><OldGame /></section>
             </div>
         </StyleAbout>
     );
