@@ -20,8 +20,7 @@ export const StyleHome = styled.div`
     .rightDiv {
         display: flex;
         flex-direction: column;
-        justify-self: center;
-        justify-content: center;
+        row-gap: 15px;
     }
     .imgHome{
         width: 70%;
@@ -31,11 +30,10 @@ export const StyleHome = styled.div`
     }
     .Icons-Stack{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         list-style: none;
         margin: 15px auto;
-        column-gap: 25px;
+        gap: 25px;
         place-items:center ;
     }
     .Icons-Stack img{

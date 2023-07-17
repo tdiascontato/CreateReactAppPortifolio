@@ -14,6 +14,9 @@ import mongodb from  '../img/mongodb.png';
 import mysql from  '../img/mysql.png';
 
 function Home(){
+
+    let listImages = [html, css, js, react, typescript, php, nodejs, git, mongodb, mysql];
+    
     return(
         <StyleHome>
             <div className="Home">
@@ -22,21 +25,11 @@ function Home(){
                     <h3>Sou professor de matemática e estudo a 1.5 ano Javascript, Node.js, React e Typescript! </h3>
                 </div>
                 <div className="rightDiv">
-                    
                         <img src={Photo} alt="img" className="imgHome"/>
-                        
                         <ul className="Icons-Stack">
-                            <li><img src={html} alt='HTML' /> </li>
-                            <li><img src={css} alt='CSS' /> </li>
-                            <li><img src={js} alt='Javascript' /> </li>
-                            <li><img src={react} alt='React' /> </li>
-                            <li><img src={typescript} alt='Typescript' /> </li>
-                            <li><img src={php} alt='PHP' /> </li>
-                            <li><img src={nodejs} alt='Node.js' /> </li>
-                            <li><img src={git} alt='Git' /> </li>
-                            <li><img src={mongodb} alt='MongoDB' /> </li>
-                            <li><img src={mysql} alt='MySQL' /> </li>
-                            
+                        {listImages.map((imagem, index) => (
+                            <li key={index}><img src={imagem} alt={index} /></li>
+                        ))}
                         </ul>
                 </div>    
             </div>
