@@ -10,13 +10,18 @@ import typescript from  '../img/typescript.png';
 import php from  '../img/php.png';
 import nodejs from  '../img/nodejs.png';
 import git from  '../img/git.png';
+import github from  '../img/github.png';
+import github2 from  '../img/github2.png';
 import mongodb from  '../img/mongodb.png';
 import mysql from  '../img/mysql.png';
 
 function Home(){
 
-    let listImages = [html, css, js, react, typescript, php, nodejs, git, mongodb, mysql];
-    
+    let listImages = [html, css, js, react, typescript, php, nodejs, git, github, github2, mongodb, mysql];
+    const flip = () =>{
+        console.log('Flip')
+    }
+
     return(
         <StyleHome>
             <div className="Home">
@@ -28,7 +33,7 @@ function Home(){
                         <img src={Photo} alt="img" className="imgHome"/>
                         <ul className="Icons-Stack">
                         {listImages.map((imagem, index) => (
-                            <li key={index}><img src={imagem} alt={index} /></li>
+                            <li key={index} onClick={flip}><img src={imagem} alt={index} /></li>
                         ))}
                         </ul>
                 </div>    

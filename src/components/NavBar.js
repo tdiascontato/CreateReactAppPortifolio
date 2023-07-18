@@ -26,10 +26,17 @@ function NavBar(){
                 
                 <div className="RightSide">
                     <ul className="BoxSocial">
-                            <li><img src={Wapp} alt = 'Meu wahtsapp' href ='#' /></li>
-                            <li><img src={github} alt = 'Meu github' href ='#' /></li>
-                            <li><img src={linkedin} alt = 'Meu Linkedin' href ='#' /></li>
-                            <li><img src={facebook} alt = 'Meu Facebook' href ='#' /></li>
+                    <li><Link to = "https://api.whatsapp.com/send?phone=5521990032597&text=Ol%C3%A1!%0AComo%20vai?%0A%F0%9F%8D%82" target="_blank">
+                        <img src={Wapp} alt = 'Meu wahtsapp' /></Link></li>
+                    <li><Link to = "http://www.github.com/tdiascontato" target="_blank">
+                        <img src={github} alt = 'Meu github' />
+                        </Link></li>
+                    <li><Link to = "http://www.linkedin.com/in/tdiascontato" target="_blank">
+                        <img src={linkedin} alt = 'Meu Linkedin' />
+                        </Link></li>
+                    <li><Link to = "http://www.facebook.com/aulascomtiago" target="_blank">
+                        <img src={facebook} alt = 'Meu Facebook' />
+                        </Link></li>
                     </ul>        
                     <ul className="BoxCheats">
                             <li><img src={england} alt = 'pt-br'/></li>

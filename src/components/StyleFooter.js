@@ -33,7 +33,7 @@ export const StyleFooter = styled.div`
   color: #c0c0c0;
 }
 .CopyAndTap button{
-  
+  cursor: pointer;
   background-color: white;
   width: 200px;
   height: 50px;
