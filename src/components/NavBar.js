@@ -26,7 +26,7 @@ function NavBar(){
                 
                 <div className="RightSide">
                     <ul className="BoxSocial">
-                    <li><Link to = "https://api.whatsapp.com/send?phone=5521990032597&text=Ol%C3%A1!%0AComo%20vai?%0A%F0%9F%8D%82" target="_blank">
+                    <li><Link to = "https://api.whatsapp.com/send?phone=5521990032507&text=Ol%C3%A1!%0AComo%20vai?" target="_blank">
                         <img src={Wapp} alt = 'Meu wahtsapp' /></Link></li>
                     <li><Link to = "http://www.github.com/tdiascontato" target="_blank">
                         <img src={github} alt = 'Meu github' />
