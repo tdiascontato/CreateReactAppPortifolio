@@ -7,11 +7,18 @@ const AppStylus = createGlobalStyle`
         box-sizing: border-box;
         
     }
+    #light{
+        background-color: #498d94;
+    }
+    #dark{
+        background-color: #1E3A3D;
+        color: white;
+    }
     .App{
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: #498d94;
+        //background-color: #498d94;
         font-family: 'VT323', monospace;
     }
     ::-webkit-scrollbar{

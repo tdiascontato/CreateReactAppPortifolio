@@ -8,9 +8,10 @@ import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
 import facebook from '../img/facebook.png';
 import england from '../img/england.png';
+//import brazil from '../img/brazil.png';
 import nightmode from '../img/night-mode.png';
-    
-function NavBar(){
+
+function NavBar({modeScreen}){
       return(
         <StylusNavBar>
             <div className="NavBar">
@@ -40,7 +41,7 @@ function NavBar(){
                     </ul>        
                     <ul className="BoxCheats">
                             <li><img src={england} alt = 'pt-br'/></li>
-                            <li><img src={nightmode} alt = 'light-dark'/></li>
+                            <li><img src={nightmode} onClick={modeScreen} alt = 'light-dark'/></li>
                     </ul>
                     
                 </div>
