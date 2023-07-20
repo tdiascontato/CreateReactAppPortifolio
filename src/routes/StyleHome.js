@@ -23,10 +23,11 @@ export const StyleHome = styled.div`
         row-gap: 15px;
     }
     .imgHome{
-        width: 70%;
-        height: 70%;
+        width: 80%;
+        height: 80%;
         padding: 0;
         margin: 0 auto;
+        border-radius: 20px;
     }
     .Icons-Stack{
         display: grid;

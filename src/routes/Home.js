@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {StyleHome} from './StyleHome.js';
 
 import Photo from  '../img/Photo.png';
@@ -22,12 +23,14 @@ function Home(){
         console.log('Flip')
     }
 
+    const [t, i18n] = useTranslation("global");
+
     return(
         <StyleHome>
             <div className="Home">
                 <div className="leftDiv">
-                    <h1>Olá! Sou o Tiago, desenvolvedor de softwares.</h1>
-                    <h3>Sou professor de matemática e estudo a 1.5 ano Javascript, Node.js, React e Typescript! </h3>
+                    <h1>{t("Home.Title")}</h1>
+                    <h3>{t("Home.Description")}</h3>
                 </div>
                 <div className="rightDiv">
                         <img src={Photo} alt="img" className="imgHome"/>

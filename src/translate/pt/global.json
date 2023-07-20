@@ -1,0 +1,26 @@
+{
+    "NavBar": {
+        "Home": "Início",
+        "About": "Sobre",
+        "Works": "Trabalhos"
+    },
+    "Home": {
+        "Title": "Olá! Sou o Tiago, desenvolvedor de softwares.",
+        "Description": "Sou professor de matemática e estudo a 1.5 ano Javascript, Node.js, React e Typescript!"
+    },
+    "About": {
+        "TitleOne": "Olá!",
+        "TitleTwo": "Eu sou o Tiago!",
+        "DescriptionOne": "Sou o Tiago, estudo Typescript e PHP desde que decidi sair do Magistério.",
+        "DescriptionTwo": "Tudo começou com um jogo da velha!",
+        "DescriptionThree": "Me senti desafiado quando tentava montar um jogo da velha em Javascript Vanilla e hoje estudo para resolver outros!"
+
+    },
+    "Repository": {
+        "Title": "Meus trabalhos:"
+    },
+    "Footer": {
+        "Copy": "Aperte para me Copiar!",
+        "Button": "Você me copiou!"
+    }
+}

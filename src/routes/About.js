@@ -1,22 +1,26 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {StyleAbout} from './StyleAbout.js';
 import OldGame from '../components/OldGame/OldGame.js'
 import Logo from '../img/logo.png';
 
 export default function About(){
+
+    const [t, i18n] = useTranslation("global");
+
     return(
         <StyleAbout>
-            <h1>Olá!<br/>Eu sou o Tiago!</h1> 
+            <h1>{t("About.TitleOne")}<br/>{t("About.TitleTwo")}</h1> 
             <div className="Container">
                 
                     <section className='Left'>
                         <img src={Logo} alt=""/>
-                        <h2>Sou o Tiago, estudo Typescript e PHP desde que decidi sair do Magistério.</h2>
-                        <h2>Tudo começou com um jogo da velha!</h2>
-                        <h2>Me senti desafiado quando tentava montar um jogo da velha em Javascript Vanilla e hoje estudo para resolver outros!</h2>
+                        <h2>{t("About.DescriptionOne")}</h2>
+                        <h2>{t("About.DescriptionTwo")}</h2>
+                        <h2>{t("About.DescriptionThree")}</h2>
                     </section>
                     <section className='Right'><OldGame /></section>
             </div>
         </StyleAbout>
     );
-}
+} 

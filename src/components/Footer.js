@@ -1,7 +1,9 @@
 //import { useState } from 'react';
-import  {StyleFooter} from './StyleFooter.js'
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+import  {StyleFooter} from './StyleFooter.js'
 
 import Wapp from '../img/whatsapp.png';
 import github2 from '../img/github2.png';
@@ -13,12 +15,13 @@ export default function Footer(){
     
     const handleClick = ()=>{       
             navigator.clipboard.writeText('tdiascontato@gmail.com');
-            setCopy('Você me copiou!');
+            setCopy(`${t("Footer.Button")}`);
             setTimeout(()=>{
                 setCopy('tdiascontato@gmail.com')
-            }, 2000)
-            
+            }, 2000)           
 }
+
+    const [t, i18n] = useTranslation("global");
 
     return(
     
@@ -39,9 +42,9 @@ export default function Footer(){
                         <img src={facebook} alt = 'Meu Facebook' />
                         </Link></li>
                 </ul> 
-
+ 
                 <div className='CopyAndTap'>
-                    <label  id="label" htmlFor="contact">Tap to copy </label>
+                    <label  id="label" htmlFor="contact">{t("Footer.Copy")}</label>
                     <button  onClick={handleClick} id="contact">{copy}</button>
                 </div>
 

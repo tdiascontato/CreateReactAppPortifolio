@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { StylusNavBar } from './StyleNavBar';
 
 import Logo from '../img/logo.png';
@@ -8,18 +9,20 @@ import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
 import facebook from '../img/facebook.png';
 import england from '../img/england.png';
-//import brazil from '../img/brazil.png';
 import nightmode from '../img/night-mode.png';
 
-function NavBar({modeScreen}){
+function NavBar({modeScreen , modeLanguage}){
+
+    const [t, i18n] = useTranslation("global");
+
       return(
         <StylusNavBar>
             <div className="NavBar">
             
                 <ul className="Box-Menu">
-                        <li><Link to ='/' className='link Home'>Home</Link></li>
-                        <li><Link to ='/about' className='link'>Sobre</Link></li>
-                        <li><Link to ='/repository' className='link'>Portifólio</Link></li>
+                        <li><Link to ='/' className='link Home'>{t("NavBar.Home")}</Link></li>
+                        <li><Link to ='/about' className='link'>{t("NavBar.About")}</Link></li>
+                        <li><Link to ='/repository' className='link'>{t("NavBar.Works")}</Link></li>
                 </ul>
                 
                 
@@ -40,13 +43,13 @@ function NavBar({modeScreen}){
                         </Link></li>
                     </ul>        
                     <ul className="BoxCheats">
-                            <li><img src={england} alt = 'pt-br'/></li>
+                            <li><img src={england} onClick={modeLanguage} alt = 'pt-br'/></li>
                             <li><img src={nightmode} onClick={modeScreen} alt = 'light-dark'/></li>
                     </ul>
                     
                 </div>
 
-            </div>
+            </div> 
         </StylusNavBar>
     );
 }
