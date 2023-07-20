@@ -13,7 +13,7 @@ import nightmode from '../img/night-mode.png';
 
 function NavBar({modeScreen , modeLanguage}){
 
-    const [t, i18n] = useTranslation("global");
+    const {t} = useTranslation("global");
 
       return(
         <StylusNavBar>

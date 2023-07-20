@@ -21,7 +21,7 @@ export default function Footer(){
             }, 2000)           
 }
 
-    const [t, i18n] = useTranslation("global");
+    const {t} = useTranslation("global");
 
     return(
     

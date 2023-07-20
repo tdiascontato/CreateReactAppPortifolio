@@ -6,7 +6,7 @@ import Logo from '../img/logo.png';
 
 export default function About(){
 
-    const [t, i18n] = useTranslation("global");
+    const {t} = useTranslation("global");
 
     return(
         <StyleAbout>

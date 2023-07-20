@@ -1,6 +1,6 @@
 import React,{createContext, useState} from "react";
 import { Outlet } from "react-router-dom";
-import { I18nextProvider, useTranslation } from 'react-i18next';
+import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 
 import global_en from './translate/en/global.json';
@@ -16,9 +16,6 @@ export default function App() {
   const toggleTheme = () => {
     setTheme((curr)=>(curr === "light" ? "dark" : "light"));
   }
-
-  const [t, i18n] = useTranslation("global");
-
   
   const [language, setLanguage] = useState('en');
   const toggleLanguage = () => {

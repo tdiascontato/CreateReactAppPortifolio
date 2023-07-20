@@ -19,7 +19,7 @@ export const StylusNavBar = styled.div`
         list-style-type: none;
     }
     .Box-Menu .link{
-        color: black;
+        color: #c0c0c0;
         text-decoration: none;
         cursor: pointer;
         font-size: 25px;

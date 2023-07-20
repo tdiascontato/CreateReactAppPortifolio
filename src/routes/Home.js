@@ -23,7 +23,7 @@ function Home(){
         console.log('Flip')
     }
 
-    const [t, i18n] = useTranslation("global");
+    const {t} = useTranslation("global");
 
     return(
         <StyleHome>
