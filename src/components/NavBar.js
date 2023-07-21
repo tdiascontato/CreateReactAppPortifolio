@@ -8,8 +8,8 @@ import Wapp from '../img/whatsapp.png';
 import github from '../img/github.png';
 import linkedin from '../img/linkedin.png';
 import facebook from '../img/facebook.png';
-import england from '../img/england.png';
-import nightmode from '../img/night-mode.png';
+import languages from '../img/languages.png';
+import mode from '../img/mode.png';
 
 function NavBar({modeScreen , modeLanguage}){
 
@@ -43,8 +43,8 @@ function NavBar({modeScreen , modeLanguage}){
                         </Link></li>
                     </ul>        
                     <ul className="BoxCheats">
-                            <li><img src={england} onClick={modeLanguage} alt = 'pt-br'/></li>
-                            <li><img src={nightmode} onClick={modeScreen} alt = 'light-dark'/></li>
+                            <li><img src={languages} onClick={modeLanguage} alt = 'pt-br'/></li>
+                            <li><img src={mode} onClick={modeScreen} alt = 'light-dark'/></li>
                     </ul>
                     
                 </div>
