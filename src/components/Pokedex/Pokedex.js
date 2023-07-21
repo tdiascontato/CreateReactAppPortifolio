@@ -1,5 +1,3 @@
-import { Container } from "@mui/system";
-import { Grid } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { StylePokedex } from "./StylePokedex";
@@ -13,23 +11,26 @@ function Pokedex() {
     }, []);
 
     const getPokemons = () =>{
-     axios.get("https://pokeapi.co/api/v2/pokemon?limit=30")
-        .then(datas => setPokemons(datas.data.results))
-        .catch(err => console.log(err));
+      var endpoints = [];
+      for(let i=1; i<51; i++){
+        endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
+      }
+      var res = axios.all(endpoints.map(endpoint => axios.get(endpoint)))
+        .then(data=> setPokemons(data))
+        .catch(err=>console.log(err));
+      return res;
     }
 
   return (
     <StylePokedex>
         <div className="Pokedex">
-            <Container maxWidth = 'false'>
-                <Grid container>
-                  {pokemons.map((pokemons)=>(
-                    <Grid item xs={4}>
-                      <PokemonCard/>
-                    </Grid>
+            <div className="Container">
+                  {pokemons.map((pokemons, index)=>(
+                    <div key={index}>
+                      <PokemonCard name={pokemons.data.name} image={pokemons.data.sprites.front_default}/>
+                    </div>
                   ))}
-                </Grid>
-            </Container>
+            </div>
         </div>
     </StylePokedex>
   )

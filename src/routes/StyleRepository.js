@@ -7,30 +7,37 @@ export const StyleRepository = styled.div`
         font-size: 40px;
         font-weight: 400;
     }
+    hr{
+        width: 70%;
+        margin: 0 auto;
+    }
     .Container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        gap: 10px;
-        margin:50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
         text-align: center;
+        justify-content: center;
     }
     .Card{
        display: flex;
        flex-direction: column;
         row-gap: 20px;
-        width: 200px;
+        max-width: 100%;
     }
     .Title{
         cursor: default;
         color: black;
 }
-
-    .ImageMovie{
-        width: 50%;
-        height: 50%;
+    .pokemon{
+        max-width: 50%;
+        max-height: 50%;
         margin: 0 auto;
 }
+    .ts{
+        max-width: 20%;
+        max-height: 20%;
+        margin: 0 auto;
+    }
     .Description{
         text-align: center;
 }

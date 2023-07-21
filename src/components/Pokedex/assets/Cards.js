@@ -1,22 +1,16 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import { StyleCard } from "./StyleCard";
 
-export default function PokemonCard() {
+export default function PokemonCard({name, image}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-      </CardContent>
-    </Card>
+    <StyleCard>
+      <div className="Container">
+        <div className="Image">
+          <img src={image} alt={name} />
+        </div>
+        <div className="Title">
+            {name}
+        </div>
+      </div>
+    </StyleCard>
   );
 }
