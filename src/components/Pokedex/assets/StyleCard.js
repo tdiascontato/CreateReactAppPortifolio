@@ -4,8 +4,8 @@ export const StyleCard = styled.div`
         display: flex;
         flex-direction: column;
         gap: 5px;
-        margin: 5px 10px;
-        background-color: none;
+        margin: 5px auto;
+        background-color: ${ props => console.log(props) };
     }
     .Title{
         font-size: 30px;
