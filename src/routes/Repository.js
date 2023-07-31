@@ -70,15 +70,17 @@ const linkStyle = {
                 <div className="Container">
         
                 <div className="PomodoroSpace">
-                    <Link to= 'https://boldstride.vercel.app/pomodoro' style={linkStyle}>
+                    <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
                         <h2>Use o método Pomodoro para estudar:</h2>
                         <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
+                        <button>Visitar!</button>
                     </Link>
                 </div>
                 <div className="GithubSpace">
-                    <Link to= 'https://boldstride.vercel.app/github' style={linkStyle}>
+                    <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
                     <h2>Pesquisa de Devs pelo API do Github:</h2>
-                <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
+                    <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
+                    <button>Visitar!</button>
                     </Link>
                 </div>
 
