@@ -3,13 +3,28 @@ import {styled} from "styled-components";
 export const StyleRepository = styled.div`
     h1{
         text-align: center;
-        color: #c0c0c0;
-        font-size: 40px;
-        font-weight: 400;
+        color: black;
+        font-size: xx-large;
+        font-weight: 500;
     }
     hr{
         width: 70%;
         margin: 0 auto;
+    }
+    h2{
+        text-align: center;
+        font-size: x-large;
+        cursor: pointer;
+        color: black;
+    &:hover{
+        color:beige;
+    }
+    }
+    .Default{
+        cursor: default;
+    }
+    .PomodoroSpace, .GithubSpace, .Card{
+        margin-top: 10%;
     }
     .Container{
         margin-top: 100px;
@@ -17,7 +32,17 @@ export const StyleRepository = styled.div`
         grid-template-columns: 1fr 1fr;
         text-align: center;
         justify-content: center;
-        //align-items: center;
+    }
+    img{
+        display: flex;
+        margin: 2% auto;
+        
+    }
+    .PomodoroImg{
+        width: 200px;
+    }
+    .GithubImg{
+        width: 275px;
     }
     .Card{
        display: flex;
@@ -29,6 +54,9 @@ export const StyleRepository = styled.div`
     .Title{
         cursor: default;
         color: #c0c0c0;
+        &:hover{
+            color: white;
+        }
 }
     .pokemon{
         max-width: 50%;
@@ -38,6 +66,8 @@ export const StyleRepository = styled.div`
 
     .Description{
         text-align: center;
+        margin-bottom: 50px;
+
 }
     .SpaceTap{
         display: flex;
@@ -77,7 +107,7 @@ export const StyleRepository = styled.div`
     }
 }
     @media(max-width: 1000px){
-        .Container{
+        .Container{//trocar para 'Games'
             display: flex;
             flex-direction: column;
             justify-items: center;
