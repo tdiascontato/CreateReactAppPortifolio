@@ -6,7 +6,7 @@ export const StyleOldGame = styled.div`
     border: 2px solid #fff;
     padding: 6px 12px;
     border-radius: 4px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     cursor: pointer;
     font-size: 1em;
@@ -28,7 +28,9 @@ export const StyleOldGame = styled.div`
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: rgba(255, 255, 255, 100);
+  background: #c23866;
+  color: white;
+  font-size: x-large;
   border-radius: 10px;
   padding: 15px;
 }
@@ -38,11 +40,13 @@ export const StyleOldGame = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .Game__board button {
   border: 1px solid #ddd;
   font-size: 4rem;
   line-height: 0;
+  
 }
 `;

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import {StyleRepository} from './StyleRepository.js';
 import Pokedex from '../components/Pokedex/Pokedex.js';
 import pokemon from '../img/pokemon.png';
@@ -63,24 +64,26 @@ const linkStyle = {
     textDecoration: 'none'
 };
 
+const {t} = useTranslation("global");
+
     return(
         <StyleRepository>
-            <h1>Meus trabalhos:</h1>
+            <h1>{t("Repository.Title")}</h1>
                 
                 <div className="Container">
         
                 <div className="PomodoroSpace">
                     <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
-                        <h2>Use o método Pomodoro para estudar:</h2>
+                        <h2>{t("Repository.Pomodoro")}</h2>
                         <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
-                        <button>Visitar!</button>
+                        <button>{t("Repository.buttomVisit")}</button>
                     </Link>
                 </div>
                 <div className="GithubSpace">
                     <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
-                    <h2>Pesquisa de Devs pelo API do Github:</h2>
+                    <h2>{t("Repository.Github")}</h2>
                     <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
-                    <button>Visitar!</button>
+                    <button>{t("Repository.buttomVisit")}</button>
                     </Link>
                 </div>
 
@@ -94,8 +97,8 @@ const linkStyle = {
                         <hr/>
 
                         <div className='Description'>
-                            <h2 className='Default'>Pequena lista dos 50 primeiros monstrinhos pego por API.</h2>
-                            <button onClick={handleOpen}>{showUp ? 'PODE FECHAR!' : 'ABRIR!'}</button>
+                            <h2 className='Default'>{t("Repository.Pokedex")}</h2>
+                            <button onClick={handleOpen}>{showUp ? `${t("Repository.buttomClose")}` : `${t("Repository.buttomOpen")}`}</button>
                             {showUp && <Pokedex />}
                         </div>
                     </div>
@@ -103,7 +106,7 @@ const linkStyle = {
                     <div className='Card'>
 
                         <div className='Title'>
-                            <h2 className='Default'>TOQUE!</h2>
+                            <h2 className='Default'>{t("Repository.Screen")}</h2>
                         </div>
                         <hr/>
                         
@@ -126,8 +129,7 @@ const linkStyle = {
 
                         <div className='Description Default'>
                             <h2 className='Default'>
-                                Tente fechar o espaço com os pontos!
-                                Fixe os pontos e os vejam variar!     
+                            {t("Repository.ScreenDescr")}     
                             </h2>
                         </div>
 

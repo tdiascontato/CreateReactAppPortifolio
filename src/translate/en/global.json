@@ -13,11 +13,19 @@
         "TitleTwo": "I'm Tiago!",
         "DescriptionOne": "I'm Tiago, I study Typescript and PHP since I decided to leave the Magisterium.",
         "DescriptionTwo": "And it all started with a game of tic-tac-toe!",
-        "DescriptionThree": "I felt challenged when trying to create a game of tic-tac-toe in Javascript Vanilla and today I study to solve others problems!"
+        "DescriptionThree": "I felt challenged when trying to create a game of tic-tac-toe and today I study to solve others problems!"
 
     },
-    "Repository": {
-        "Title": "My works:"
+    "Repository": { 
+        "Title": "My works:",
+        "Pomodoro": "Use the Pomodoro method to study:",
+        "Github": "Search for Devs via Github API:",
+        "Pokedex": "Shortlist of the first 50 little monsters caught by API.",
+        "Screen": "TOUCH!",
+        "ScreenDescr": "Try to close the space with the dots! Fix the dots and watch them vary!",
+        "buttomVisit": "Visit!",
+        "buttomOpen": "Open!",
+        "buttomClose": "Close!"
     },
     "Footer": {
         "Copy": "Tap to Copy Me!",

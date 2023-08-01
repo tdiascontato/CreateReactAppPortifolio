@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {StyleAbout} from './StyleAbout.js';
 import OldGame from '../components/OldGame/OldGame.js'
-import Logo from '../img/logo.png';
+import photo from '../img/Photo.png';
 
 export default function About(){
 
@@ -14,7 +14,7 @@ export default function About(){
             <div className="Container">
                 
                     <section className='Left'>
-                        <img src={Logo} alt=""/>
+                        <img src={photo} alt=""/>
                         <h2>{t("About.DescriptionOne")}</h2>
                         <h2>{t("About.DescriptionTwo")}</h2>
                         <h2>{t("About.DescriptionThree")}</h2>
@@ -23,4 +23,4 @@ export default function About(){
             </div>
         </StyleAbout>
     );
-} 
+}  

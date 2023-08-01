@@ -40,7 +40,7 @@ export const StyleHome = styled.div`
     .Icons-Stack img{
         width: 50px;
         height: 50px;
-        cursor: pointer;
+        cursor: default;
         transition: 0.4s;
     }
     .Icons-Stack img:hover{

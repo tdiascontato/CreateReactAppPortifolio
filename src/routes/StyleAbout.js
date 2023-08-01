@@ -15,7 +15,7 @@ export const StyleAbout = styled.div`
         color: #c0c0c0;
     }
     .Left img{
-       width: 150px;
+       width: 200px;
        margin: 0 auto;
     }
     .Right{

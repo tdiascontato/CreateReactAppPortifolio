@@ -6,6 +6,10 @@ export const StyleRepository = styled.div`
         color: black;
         font-size: xx-large;
         font-weight: 500;
+        cursor: default;
+        &:hover{
+            color: white;
+        }
     }
     hr{
         width: 70%;
