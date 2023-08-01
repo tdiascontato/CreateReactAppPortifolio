@@ -66,26 +66,26 @@ const linkStyle = {
 
 const {t} = useTranslation("global");
 
-    return(
+    return( 
         <StyleRepository>
             <h1>{t("Repository.Title")}</h1>
                 
                 <div className="Container">
         
-                <div className="PomodoroSpace">
-                    <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
-                        <h2>{t("Repository.Pomodoro")}</h2>
-                        <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
+                    <div className="PomodoroSpace">
+                        <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
+                            <h2>{t("Repository.Pomodoro")}</h2>
+                            <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
+                            <button>{t("Repository.buttomVisit")}</button>
+                        </Link>
+                    </div>
+                    <div className="GithubSpace">
+                        <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
+                        <h2>{t("Repository.Github")}</h2>
+                        <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
                         <button>{t("Repository.buttomVisit")}</button>
-                    </Link>
-                </div>
-                <div className="GithubSpace">
-                    <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
-                    <h2>{t("Repository.Github")}</h2>
-                    <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
-                    <button>{t("Repository.buttomVisit")}</button>
-                    </Link>
-                </div>
+                        </Link>
+                    </div>
 
                     <div className='Card'>
                         <div className='Title'>

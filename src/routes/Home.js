@@ -35,7 +35,7 @@ function Home(){
                         <ul className="Icons-Stack">
                         {listImages.map((imagem, index) => (
                             <li key={index} onClick={flip}><img src={imagem} alt={index} /></li>
-                        ))}
+                         ))}
                         </ul>
                 </div>    
             </div>

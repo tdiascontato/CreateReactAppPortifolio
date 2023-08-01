@@ -6,10 +6,9 @@ export const StyleHome = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        justify-content: center;
-        align-items: center;
-        grid-gap: 100px;
-        margin: 0 100px;
+        place-items: center;
+        grid-gap: 150px;
+        margin: 100px;
     }
     .leftDiv {
         text-align: center;

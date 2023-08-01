@@ -35,7 +35,7 @@ export const StyleRepository = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        justify-content: center;
+        place-items: center;
     }
     img{
         display: flex;

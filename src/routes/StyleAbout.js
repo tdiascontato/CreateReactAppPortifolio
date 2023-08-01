@@ -1,8 +1,12 @@
 import styled from "styled-components";
 export const StyleAbout = styled.div`
-    h1, h2, p{
+    h1,h2{
         text-align: center;
+        cursor: default;
     }
+    h1:hover{
+            color: white;
+        }
     
     .Container{
         display:grid;
@@ -16,7 +20,7 @@ export const StyleAbout = styled.div`
     }
     .Left img{
        width: 200px;
-       margin: 0 auto;
+       margin: 5% auto;
     }
     .Right{
         max-width: 100%;
