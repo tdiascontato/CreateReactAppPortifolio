@@ -96,7 +96,7 @@ export const StyleRepository = styled.div`
         transition: 1s ease;
     }
 }
-    @media(max-width: 1000px){
+    @media(max-width: 800px){
         .Container{//trocar para 'Games'
             display: flex;
             flex-direction: column;
