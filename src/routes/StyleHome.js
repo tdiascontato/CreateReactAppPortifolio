@@ -3,42 +3,39 @@ import {styled} from "styled-components";
 
 export const StyleHome = styled.div`
     .Home{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        place-items: center;
-        grid-gap: 150px;
-        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        margin: 100px auto;
+        
     }
     .leftDiv {
+        max-width: 70%;
+        margin: 0 auto;
         text-align: center;
-    }
-    .leftDiv h3{
-        color: #c0c0c0;
+        font-size: xx-large;
+        -webkit-font-smoothing: antialiased !important;
+        display: flex;
+        flex-direction: column;
+        //gap: 30px;
     }
     .rightDiv {
         display: flex;
         flex-direction: column;
-        row-gap: 15px;
-    }
-    .imgHome{
-        width: 80%;
-        height: 80%;
-        padding: 0;
-        margin: 0 auto;
-        border-radius: 20px;
     }
     .Icons-Stack{
+        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         list-style: none;
-        margin: 15px auto;
-        gap: 25px;
-        place-items:center ;
+        margin: 0 auto;
+        width: 300px;
+        height: 400px;
+       
     }
     .Icons-Stack img{
-        width: 50px;
-        height: 50px;
+        width: 80%;
+        height: 80%;
         cursor: default;
         transition: 0.4s;
     }
@@ -50,25 +47,31 @@ export const StyleHome = styled.div`
             display: flex;
             flex-direction:column ;
             justify-content: center;
-            margin: 20px 160px;
+            margin: 100px auto;
         }
         .leftDiv{
             display: flex;
             flex-direction: column;
             text-align: center;
+            font-size: x-large;
         }
         .rightDiv{
            display: flex;
            flex-direction: column;
         }
-        .imgHome{
-            width: 50%;
-            height: 50%;
-            padding: 0;
+        .Icons-Stack{      
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            list-style: none;
+            margin: 0 auto;
+            max-width: 250px;
+            max-height: 350px;
         }
         .Icons-Stack img{
-            width: 50px;
-            height: 50px;
+            width: 80%;
+            height: 80%;
+            cursor: default;
+            transition: 0.4s;
         }
 
     }

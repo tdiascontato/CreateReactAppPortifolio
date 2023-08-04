@@ -12,12 +12,12 @@ import Footer from "./components/Footer";
 export const ThemeContext = createContext(null);
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const toggleTheme = () => {
     setTheme((curr)=>(curr === "light" ? "dark" : "light"));
   }
   
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('pt');
   const toggleLanguage = () => {
     language === 'pt' ? setLanguage('en') : setLanguage('pt')
   }

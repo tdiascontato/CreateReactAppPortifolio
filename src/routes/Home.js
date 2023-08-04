@@ -25,11 +25,11 @@ function Home(){
     const {t} = useTranslation("global");
 
     return(
-        <StyleHome>
+        <StyleHome> 
             <div className="Home">
                 <div className="leftDiv">
-                    <h1>{t("Home.Title")}</h1>
-                    <h3>{t("Home.Description")}</h3>
+                    <h2>{t("Home.Title")}</h2>
+                    <h3 id='Description'>{t("Home.Description")}</h3>
                 </div>
                 <div className="rightDiv">
                         <ul className="Icons-Stack">

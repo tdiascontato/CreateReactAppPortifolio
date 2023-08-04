@@ -16,17 +16,17 @@ export const StyleAbout = styled.div`
         height: content;
         text-align: center;
         align-items: center;
-        color: #c0c0c0;
     }
     .Left img{
-       width: 200px;
+       width: 300px;
+       border-radius: 20px;
        margin: 5% auto;
     }
     .Right{
         max-width: 100%;
         margin: 20px auto;
     }
-    @media(max-width: 800px){
+    @media(max-width: 900px){
         .Container{
             display: flex;
             flex-direction: column;

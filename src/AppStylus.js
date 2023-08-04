@@ -7,20 +7,28 @@ const AppStylus = createGlobalStyle`
         box-sizing: border-box;        
     }
     #light{
-        background-color: #498d94;
+        background-color: #e9c790;
+        color: black;
         transition: 1s ease;
-        
+    }
+    #light #Description{
+        color: white; 
+        transition: 1s ease;
     }
     #dark{
-        background-color: #1E3A3D;
+        background-color: #1d1721;
         color: white;
+        transition: 1s ease;
+    }
+    #dark #Description{
+        color: #e0705d; 
         transition: 1s ease;
     }
     .App{
         display: flex;
         flex-direction: column;
         width: 100%;
-        font-family: 'VT323', monospace;
+        font-family: 'Roboto', sans-serif;
     }
     ::-webkit-scrollbar{
         display: none;

@@ -3,13 +3,8 @@ import {styled} from "styled-components";
 export const StyleRepository = styled.div`
     h1{
         text-align: center;
-        color: black;
         font-size: xx-large;
-        font-weight: 500;
         cursor: default;
-        &:hover{
-            color: white;
-        }
     }
     hr{
         width: 70%;
@@ -19,10 +14,6 @@ export const StyleRepository = styled.div`
         text-align: center;
         font-size: x-large;
         cursor: pointer;
-        color: black;
-    &:hover{
-        color:beige;
-    }
     }
     .Default{
         cursor: default;
@@ -39,8 +30,7 @@ export const StyleRepository = styled.div`
     }
     img{
         display: flex;
-        margin: 2% auto;
-        
+        margin: 2% auto;   
     }
     .PomodoroImg{
         width: 200px;
@@ -57,10 +47,6 @@ export const StyleRepository = styled.div`
     }
     .Title{
         cursor: default;
-        color: #c0c0c0;
-        &:hover{
-            color: white;
-        }
 }
     .pokemon{
         max-width: 50%;
@@ -95,7 +81,7 @@ export const StyleRepository = styled.div`
         cursor: pointer;
         background: none;
         width: 200px;
-        height: 50px;
+        height: max-content;
         margin: 10px auto;
         border-radius: 20px;
         border: white 3px solid;

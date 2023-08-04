@@ -8,7 +8,7 @@ import github from '../img/githubProject.png';
 import pomodoro from '../img/pomodoroProject.png';
 
 export default function Repository(){
-
+ 
 const [showUp, setShowUp] = useState(false);
 const [queue, setQueue] = useState([]);
 const [queueTwo, setQueueTwo] = useState([]);
@@ -74,22 +74,22 @@ const {t} = useTranslation("global");
         
                     <div className="PomodoroSpace">
                         <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
-                            <h2>{t("Repository.Pomodoro")}</h2>
+                            <h2 id='Description' >{t("Repository.Pomodoro")}</h2>
                             <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
-                            <button>{t("Repository.buttomVisit")}</button>
+                            <button id='Description' >{t("Repository.buttomVisit")}</button>
                         </Link>
                     </div>
                     <div className="GithubSpace">
                         <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
-                        <h2>{t("Repository.Github")}</h2>
+                        <h2 id='Description' >{t("Repository.Github")}</h2>
                         <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
-                        <button>{t("Repository.buttomVisit")}</button>
+                        <button id='Description' >{t("Repository.buttomVisit")}</button>
                         </Link>
                     </div>
 
                     <div className='Card'>
                         <div className='Title'>
-                            <h2 className='Default'>Pokedex</h2>
+                            <h2 className='Default' id='Description' >Pokedex</h2>
                         </div>
                         
                         <img className='ImageMovie pokemon' src={pokemon} alt='50 primeiros Pokémons!'/>
@@ -97,8 +97,8 @@ const {t} = useTranslation("global");
                         <hr/>
 
                         <div className='Description'>
-                            <h2 className='Default'>{t("Repository.Pokedex")}</h2>
-                            <button onClick={handleOpen}>{showUp ? `${t("Repository.buttomClose")}` : `${t("Repository.buttomOpen")}`}</button>
+                            <h2 className='Default' id='Description' >{t("Repository.Pokedex")}</h2>
+                            <button onClick={handleOpen} id='Description' >{showUp ? `${t("Repository.buttomClose")}` : `${t("Repository.buttomOpen")}`}</button>
                             {showUp && <Pokedex />}
                         </div>
                     </div>
@@ -106,7 +106,7 @@ const {t} = useTranslation("global");
                     <div className='Card'>
 
                         <div className='Title'>
-                            <h2 className='Default'>{t("Repository.Screen")}</h2>
+                            <h2 className='Default' id='Description' >{t("Repository.Screen")}</h2>
                         </div>
                         <hr/>
                         
@@ -128,7 +128,7 @@ const {t} = useTranslation("global");
                         <hr/>
 
                         <div className='Description Default'>
-                            <h2 className='Default'>
+                            <h2 className='Default' id='Description' >
                             {t("Repository.ScreenDescr")}     
                             </h2>
                         </div>

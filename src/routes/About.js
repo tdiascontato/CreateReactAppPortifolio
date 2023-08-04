@@ -15,9 +15,9 @@ export default function About(){
                 
                     <section className='Left'>
                         <img src={photo} alt=""/>
-                        <h2>{t("About.DescriptionOne")}</h2>
-                        <h2>{t("About.DescriptionTwo")}</h2>
-                        <h2>{t("About.DescriptionThree")}</h2>
+                        <h2 id='Description' >{t("About.DescriptionOne")}</h2>
+                        <h2 id='Description' >{t("About.DescriptionTwo")}</h2>
+                        <h2 id='Description' >{t("About.DescriptionThree")}</h2>
                     </section>
                     <section className='Right'><OldGame /></section>
             </div>
