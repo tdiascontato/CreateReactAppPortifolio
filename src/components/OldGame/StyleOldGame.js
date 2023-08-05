@@ -14,7 +14,7 @@ export const StyleOldGame = styled.div`
   button:hover {
     background: #c23866;
     color: #fff;
-}
+} 
   .Game {
   position: relative;
   width: 400px;

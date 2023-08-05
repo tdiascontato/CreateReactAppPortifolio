@@ -65,7 +65,7 @@ export const StyleRepository = styled.div`
         width: 95%;
         height: 450px;
         border-radius: 20px;
-        background-color: #d4d473 ;//#975c5c; // #024442; //#024442;//#244420;
+        background-color: #d4d473 ;
         
 }
     .Circle{
