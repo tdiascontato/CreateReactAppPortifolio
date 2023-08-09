@@ -12,7 +12,7 @@ const AppStylus = createGlobalStyle`
         transition: 1s ease;
     }
     #light #Description{
-        color: white; 
+        color: black; 
         transition: 1s ease;
     }
     #dark{

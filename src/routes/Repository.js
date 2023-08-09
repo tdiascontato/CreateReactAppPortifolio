@@ -73,7 +73,7 @@ const {t} = useTranslation("global");
                 <div className="Container">
         
                     <div className="PomodoroSpace">
-                        <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
+                        <Link to= 'tdiaspomodoro.vercel.app' style={linkStyle}>
                             <h2 id='Description' >{t("Repository.Pomodoro")}</h2>
                             <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
                             <button id='Description' >{t("Repository.buttomVisit")}</button>
@@ -85,7 +85,7 @@ const {t} = useTranslation("global");
                         <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
                         <button id='Description' >{t("Repository.buttomVisit")}</button>
                         </Link>
-                    </div>
+                    </div> 
 
                     <div className='Card'>
                         <div className='Title'>

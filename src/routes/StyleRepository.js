@@ -79,22 +79,13 @@ export const StyleRepository = styled.div`
 }
     button{
         cursor: pointer;
-        background: none;
-        width: 200px;
-        height: max-content;
-        margin: 10px auto;
+        background: white;
+        border: none;
         border-radius: 20px;
-        border: white 3px solid;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'VT323', monospace;
-        transition: 1s ease;
-    &:hover{
-        background-color: #c0c0c0;
-        font-size: 23px;
-        font-weight: 450;
-        transition: 1s ease;
-    }
+        margin: 10px auto;
+        padding: 15px;
+        font-size: x-large;
+        height: fit-content;
 }
     @media(max-width: 800px){
         .Container{//trocar para 'Games'
