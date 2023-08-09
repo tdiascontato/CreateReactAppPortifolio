@@ -80,7 +80,7 @@ const {t} = useTranslation("global");
                         </Link>
                     </div>
                     <div className="GithubSpace">
-                        <Link to= 'https://typedias.vercel.app/' style={linkStyle}>
+                        <Link to= 'https://tdiasgithub.vercel.app/' style={linkStyle}>
                         <h2 id='Description' >{t("Repository.Github")}</h2>
                         <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
                         <button id='Description' >{t("Repository.buttomVisit")}</button>

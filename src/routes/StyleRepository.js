@@ -80,12 +80,13 @@ export const StyleRepository = styled.div`
     button{
         cursor: pointer;
         background: white;
+        height: fit-content;
+        max-width: fit-content;
+        font-size: large;
         border: none;
         border-radius: 20px;
         margin: 10px auto;
         padding: 15px;
-        font-size: x-large;
-        height: fit-content;
 }
     @media(max-width: 800px){
         .Container{//trocar para 'Games'

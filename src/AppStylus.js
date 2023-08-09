@@ -8,7 +8,7 @@ const AppStylus = createGlobalStyle`
     }
     #light{
         background-color: #e9c790;
-        color: black;
+        color:  #ad402d;
         transition: 1s ease;
     }
     #light #Description{
