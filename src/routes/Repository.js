@@ -73,7 +73,7 @@ const {t} = useTranslation("global");
                 <div className="Container">
         
                     <div className="PomodoroSpace">
-                        <Link to= 'tdiaspomodoro.vercel.app' style={linkStyle}>
+                        <Link to= 'https://tdiaspomodoro.vercel.app/' style={linkStyle}>
                             <h2 id='Description' >{t("Repository.Pomodoro")}</h2>
                             <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
                             <button id='Description' >{t("Repository.buttomVisit")}</button>
