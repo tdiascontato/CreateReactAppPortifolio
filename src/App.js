@@ -42,8 +42,11 @@ export default function App() {
     <I18nextProvider i18n={i18next}>
       <AppStylus />
           <div className="App" id={theme}>
-          
-                <NavBar modeScreen={toggleTheme} modeLanguage={toggleLanguage}/>
+
+                <div className="NavBarApp">
+                  <NavBar modeScreen={toggleTheme} modeLanguage={toggleLanguage}/>
+                </div>
+                
                 <div className="Content">
                   <Outlet />
                 </div>

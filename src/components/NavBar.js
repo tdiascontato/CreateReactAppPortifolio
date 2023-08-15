@@ -6,7 +6,7 @@ import { StylusNavBar } from './StyleNavBar';
 import Logo from '../img/logo.png';
 import languages from '../img/languages.png';
 import mode from '../img/mode.png';
-
+ 
 function NavBar({modeScreen , modeLanguage}){
  
     const {t} = useTranslation("global");

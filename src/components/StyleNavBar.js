@@ -4,7 +4,7 @@ export const StylusNavBar = styled.div`
     .NavBar {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 15px 75px;  
+        margin: 15px 10%;  
       }
     ::-webkit-scrollbar{
         display: none;
@@ -38,8 +38,8 @@ export const StylusNavBar = styled.div`
     }
     .RightSide img {
         cursor: pointer;
-        height: 25px;
-        width: 25px;
+        height: 40px;
+        width: 40px;
     }
     .BoxCheats{
       list-style-type: none;
@@ -58,6 +58,11 @@ export const StylusNavBar = styled.div`
         text-align: center;
         font-size: x-large;
         -webkit-font-smoothing: antialiased !important;
+    }
+  }
+  @media(max-width: 400px){
+    .Logo{
+      display: none;
     }
   }
 `;

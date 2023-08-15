@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { StylePokedex } from "./StylePokedex";
 import PokemonCard from "./assets/Cards";
 
 function Pokedex() {
@@ -22,17 +21,15 @@ function Pokedex() {
     }
 
   return (
-    <StylePokedex>
         <div className="Pokedex">
-            <div className="Container">
+            <div className="ContainerPokedex">
                   {pokemons.map((pokemons, index)=>(
-                    <div key={index}>
+                    <div id='Description' key={index}>
                       <PokemonCard name={pokemons.data.name} image={pokemons.data.sprites.front_default}/>
                     </div>
                   ))}
             </div>
         </div>
-    </StylePokedex>
   )
 }
 

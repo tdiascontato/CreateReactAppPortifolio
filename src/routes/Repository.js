@@ -87,7 +87,7 @@ const {t} = useTranslation("global");
                         </Link>
                     </div> 
 
-                    <div className='Card'>
+                    <div className='Pokedex'>
                         <div className='Title'>
                             <h2 className='Default' id='Description' >Pokedex</h2>
                         </div>

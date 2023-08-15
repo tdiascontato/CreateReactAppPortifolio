@@ -18,19 +18,27 @@ export const StyleRepository = styled.div`
     .Default{
         cursor: default;
     }
-    .PomodoroSpace, .GithubSpace, .Card{
-        margin-top: 10%;
-    }
-    .Container{
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: center;
-        place-items: center;
-    }
     img{
         display: flex;
         margin: 2% auto;   
+    }
+    
+    .PomodoroSpace, .GithubSpace, .Pokedex, .Card{
+        margin-top: 10%;
+    }
+    .PomodoroSpace, .GithubSpace, .Pokedex{
+        min-width: fit-content;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 15px;
+        background: #bdafae;
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        row-gap: 100px;
     }
     .PomodoroImg{
         width: 200px;
@@ -45,32 +53,38 @@ export const StyleRepository = styled.div`
        max-width: 100%;
        min-height: 30vh;
     }
-    .Title{
-        cursor: default;
-}
+    .ContainerPokedex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
     .pokemon{
-        max-width: 50%;
-        max-height: 50%;
+        max-width: 25%;
+        max-height: 25%;
         margin: 0 auto;
-}
-
+    }
     .Description{
         text-align: center;
         margin-bottom: 50px;
 
-}
+    }
     .SpaceTap{
         display: flex;
         align-self: center;
-        width: 95%;
-        height: 450px;
+        width: 90vw;
+        height: 80vh;
         border-radius: 20px;
         background-color: #d4d473 ;
+
+        @media(max-width: 500px){
+            display: flex;
+            flex-direction: column;
+        }
         
 }
     .Circle{
         display: block;
-        //valores abaixo default para modificar em js
         width: 15px;
         height: 15px;
         border-radius: 50%;
@@ -79,21 +93,14 @@ export const StyleRepository = styled.div`
 }
     button{
         cursor: pointer;
-        background: white;
+        display: flex;
+        margin: 20px auto;
+        padding: 15px;
+        background: #88d3ab;
         height: fit-content;
         max-width: fit-content;
-        font-size: large;
+        font-size: x-large;
         border: none;
         border-radius: 20px;
-        margin: 10px auto;
-        padding: 15px;
-}
-    @media(max-width: 800px){
-        .Container{//trocar para 'Games'
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            row-gap: 100px;
-        }
 }
 `;

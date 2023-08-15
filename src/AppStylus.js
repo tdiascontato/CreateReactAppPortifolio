@@ -8,7 +8,7 @@ const AppStylus = createGlobalStyle`
     }
     #light{
         background-color: #e9c790;
-        color:  #ad402d;
+        color:  #13444d;
         transition: 1s ease;
     }
     #light #Description{
@@ -17,11 +17,11 @@ const AppStylus = createGlobalStyle`
     }
     #dark{
         background-color: #1d1721;
-        color: white;
+        color: #b6d0a0;
         transition: 1s ease;
     }
     #dark #Description{
-        color: #e0705d; 
+        color: white; 
         transition: 1s ease;
     }
     .App{
@@ -32,6 +32,9 @@ const AppStylus = createGlobalStyle`
     }
     ::-webkit-scrollbar{
         display: none;
+    }
+    .NavBarApp{
+
     }
     .Content{
         min-width: 100% ;
