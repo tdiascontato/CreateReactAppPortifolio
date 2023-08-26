@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {Container,Texto, Texto2, Button, Img, Img2, Card, Beliche, BySide} from './StyleRepository.js';
+import {Container,Texto, Texto2, Button, Img, Img2, Card,Card2, Beliche, BySide} from './StyleRepository.js';
 import github from '../img/githubProject.png';
 import mysql from '../img/mysql.png';
 import php from '../img/php.png';
@@ -34,7 +34,7 @@ const {t} = useTranslation("global");
                             <BySide><Img id="php" src={php} alt="PHP!"/> <Img id="mysql" src={mysql} alt="Mysql!"/></BySide>
                     </Card>
                     <Beliche>
-                        <Card className="PomodoroSpace">
+                        <Card2 className="PomodoroSpace">
                             <Link to= 'https://tdiaspomodoro.vercel.app/' style={linkStyle}>
                                 <Texto2>
                                     <h2 id='Description' >{t("Repository.Pomodoro")}</h2>
@@ -42,8 +42,8 @@ const {t} = useTranslation("global");
                                 <Img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
                                 <Button id='Description' >{t("Repository.buttomVisit")}</Button>
                             </Link>
-                        </Card> 
-                        <Card className="GithubSpace">
+                        </Card2> 
+                        <Card2 className="GithubSpace">
                             <Link to= 'https://tdiasgithub.vercel.app/' style={linkStyle}>
                             <Texto2>
                                 <h2 id='Description' >{t("Repository.Github")}</h2>
@@ -51,7 +51,7 @@ const {t} = useTranslation("global");
                             <Img src={github} alt='Procure Devs no Github' className='GithubImg'/>
                             <Button id='Description' >{t("Repository.buttomVisit")}</Button>
                             </Link>
-                        </Card>
+                        </Card2>
                     </Beliche>
 
             </Container>

@@ -81,11 +81,22 @@ export const Card = styled.section`
     display: flex;
     flex-direction: column;
     background-color: #8EAFAF;
-    border: 2px solid #C0D0D0;
+    border: 2px solid #C0D0D0; 
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     max-width: fit-content;
   
+    margin: 10px auto;
+`;
+export const Card2 = styled.section`
+    display: flex;
+    flex-direction: column;
+    background-color: #8EAFAF;
+    border: 2px solid #C0D0D0; 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    max-width: 10rem;
+    height:20rem;
     margin: 10px auto;
 `;
 export const Img = styled.img`
