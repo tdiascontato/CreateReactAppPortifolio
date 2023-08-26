@@ -11,7 +11,7 @@ function Pokedex() {
 
     const getPokemons = () =>{
       var endpoints = [];
-      for(let i=1; i<51; i++){
+      for(let i=1; i<=25; i++){
         endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
       }
       var res = axios.all(endpoints.map(endpoint => axios.get(endpoint)))
@@ -21,7 +21,7 @@ function Pokedex() {
     }
 
   return (
-        <div className="Pokedex">
+        <div className="Pokedex"> 
             <div className="ContainerPokedex">
                   {pokemons.map((pokemons, index)=>(
                     <div id='Description' key={index}>

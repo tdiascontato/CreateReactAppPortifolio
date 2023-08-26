@@ -12,15 +12,14 @@
         "TitleOne": "Olá!",
         "TitleTwo": "Eu sou o Tiago!",
         "DescriptionOne": "Sou o Tiago, estudo Typescript, Nodejs e PHP desde que decidi sair do Magistério.",
-        "DescriptionTwo": "Tudo começou com um jogo da velha!",
-        "DescriptionThree": "Me senti desafiado quando tentava montar jogos clássicos como o Jogo da Velha e hoje estudo para resolver outros!"
-
+        "DescriptionTwo": "Tudo começou com a criação de jogos e desafios com o DOM!",
+        "DescriptionThree": "Me senti instigado a resolver esses e outros outros desafios. Hoje faço sites com PHP e Reactjs, com ou sem Banco de Dados!"
     },
     "Repository": {
         "Title": "Meus trabalhos:",
         "Pomodoro": "Use o método Pomodoro para estudar:",
         "Github": "Pesquisa de Devs pelo API do Github:",
-        "Pokedex": "Pequena lista dos 50 primeiros monstrinhos pego por API.",
+        "Pokedex": "Pequena lista dos 25 primeiros monstrinhos pego por API.",
         "Screen": "TOQUE!",
         "ScreenDescr": "Tente fechar o espaço com os pontos! Fixe os pontos e os vejam variar!",
         "buttomVisit": "Página de Deploy!",

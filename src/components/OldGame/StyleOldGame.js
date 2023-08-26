@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const StyleOldGame = styled.div`
-  button {
+  button { 
     background: none;
     border: 2px solid #fff;
     padding: 6px 12px;
@@ -19,6 +19,9 @@ export const StyleOldGame = styled.div`
   position: relative;
   width: 400px;
   height: 400px;
+  @media(max-width: 500px){
+  width: 300px;
+  }
 }
 
 .Game__menu {

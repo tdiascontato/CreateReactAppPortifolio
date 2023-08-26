@@ -1,64 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {StyleRepository} from './StyleRepository.js';
-import Pokedex from '../components/Pokedex/Pokedex.js';
-import pokemon from '../img/pokemon.png';
+import {Container,Texto, Texto2, Button, Img, Img2, Card, Beliche, BySide} from './StyleRepository.js';
 import github from '../img/githubProject.png';
+import mysql from '../img/mysql.png';
+import php from '../img/php.png';
 import pomodoro from '../img/pomodoroProject.png';
+import Blog from '../img/Blog.png';
 
 export default function Repository(){
- 
-const [showUp, setShowUp] = useState(false);
-const [queue, setQueue] = useState([]);
-const [queueTwo, setQueueTwo] = useState([]);
-const handleOpen = () => setShowUp(!showUp);
+  
 
-function handleClick(e){
-    const point = {
-        clientX: e.pageX,
-        clientY: e.pageY,
-}
-    setQueue(queue => [...queue, point]);
-}
-
-const handleDel=(e)=>{
-    e.stopPropagation();
-    if(queue.length === 0) return;
-
-    const lastItem = queue[queue.length - 1];
-    setQueueTwo(props=> [...props, lastItem]);
-
-    setQueue(props=>{
-        const newArray = [...props].slice(0, -1);
-        return newArray;
-   })
-}
-
-const handleBackAgain=(e)=>{
-    e.stopPropagation();
-    if(queueTwo.length === 0) return;
-        
-    const recoveredPoint = queueTwo[queueTwo.length - 1];
-    setQueueTwo(props => {
-        const newArr = [...props].slice(0,-1);
-        return newArr;
-    });
-    setQueue(props => [...props, recoveredPoint]);
-}
-
-function RandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-function RandomSize() {// Fixei valores default
-    return `${Math.floor(Math.random() * (100 - 50 + 1)) + 20}px`;
-}
 
 const linkStyle = {
     textDecoration: 'none'
@@ -67,75 +19,42 @@ const linkStyle = {
 const {t} = useTranslation("global");
 
     return( 
-        <StyleRepository>
-            <h1>{t("Repository.Title")}</h1>
+        <>
+            <Texto><h1>{t("Repository.Title")}</h1></Texto>
                 
-                <div className="Container">
-        
-                    <div className="PomodoroSpace">
-                        <Link to= 'https://tdiaspomodoro.vercel.app/' style={linkStyle}>
-                            <h2 id='Description' >{t("Repository.Pomodoro")}</h2>
-                            <img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
-                            <button id='Description' >{t("Repository.buttomVisit")}</button>
-                        </Link>
-                    </div>
-                    <div className="GithubSpace">
-                        <Link to= 'https://tdiasgithub.vercel.app/' style={linkStyle}>
-                        <h2 id='Description' >{t("Repository.Github")}</h2>
-                        <img src={github} alt='Procure Devs no Github' className='GithubImg'/>
-                        <button id='Description' >{t("Repository.buttomVisit")}</button>
-                        </Link>
-                    </div> 
+            <Container>
 
-                    <div className='Pokedex'>
-                        <div className='Title'>
-                            <h2 className='Default' id='Description' >Pokedex</h2>
-                        </div>
-                        
-                        <img className='ImageMovie pokemon' src={pokemon} alt='50 primeiros Pokémons!'/>
-                        
-                        <hr/>
+                    <Card classname="Blog">
+                        <Img2 id='BlogImg' src={Blog}/>
+                            <Texto><Link to= 'https://tdiascontato.000webhostapp.com/'><h1 id="white">Site PHP com Painel Dashboard</h1></Link></Texto>
+                            <Texto2><h2>Este site em PHP combina um layout de blog cativante com um painel de controle eficiente, permitindo que os leitores explorem artigos de forma intuitiva e oferecendo aos administradores ferramentas para gerenciar conteúdo, agendar postagens e analisar métricas. Uma plataforma completa para a criação, publicação e monitoramento de conteúdo.</h2></Texto2>
+                            <Texto2><Link to= 'github.com/tdiascontato'><h2 id="white">Github!</h2></Link></Texto2>
+                            <Texto2><Link to= 'https://tdiascontato.000webhostapp.com/'><h2 id="white">Deploy!</h2></Link></Texto2>
+                            <Texto2><h2 id="white default">Tecnologias: </h2></Texto2>
+                            <BySide><Img id="php" src={php} alt="PHP!"/> <Img id="mysql" src={mysql} alt="Mysql!"/></BySide>
+                    </Card>
+                    <Beliche>
+                        <Card className="PomodoroSpace">
+                            <Link to= 'https://tdiaspomodoro.vercel.app/' style={linkStyle}>
+                                <Texto2>
+                                    <h2 id='Description' >{t("Repository.Pomodoro")}</h2>
+                                </Texto2>
+                                <Img src={pomodoro} alt='Estude utilizando o método Pomodoro' className='PomodoroImg'/>
+                                <Button id='Description' >{t("Repository.buttomVisit")}</Button>
+                            </Link>
+                        </Card> 
+                        <Card className="GithubSpace">
+                            <Link to= 'https://tdiasgithub.vercel.app/' style={linkStyle}>
+                            <Texto2>
+                                <h2 id='Description' >{t("Repository.Github")}</h2>
+                            </Texto2>
+                            <Img src={github} alt='Procure Devs no Github' className='GithubImg'/>
+                            <Button id='Description' >{t("Repository.buttomVisit")}</Button>
+                            </Link>
+                        </Card>
+                    </Beliche>
 
-                        <div className='Description'>
-                            <h2 className='Default' id='Description' >{t("Repository.Pokedex")}</h2>
-                            <button onClick={handleOpen} id='Description' >{showUp ? `${t("Repository.buttomClose")}` : `${t("Repository.buttomOpen")}`}</button>
-                            {showUp && <Pokedex />}
-                        </div>
-                    </div>
-
-                    <div className='Card'>
-
-                        <div className='Title'>
-                            <h2 className='Default' id='Description' >{t("Repository.Screen")}</h2>
-                        </div>
-                        <hr/>
-                        
-                        <div className='SpaceTap' onClick={e => handleClick(e)}>
-                            {queue.map((click, i) => (
-                                <span className='Circle oscillating' key={i} style={{
-                                    top: click.clientY, 
-                                    left: click.clientX, 
-                                    backgroundColor: RandomColor(),
-                                    width: RandomSize(),
-                                    height: RandomSize(),
-                                    borderRadius: RandomSize()
-                                }}/>
-                            ))}
-                            <button onClick={handleDel}>CTRL + Z!</button>
-                            <button onClick={handleBackAgain}>CTRL + SHIFT + Z!</button>
-                        </div>
-                        
-                        <hr/>
-
-                        <div className='Description Default'>
-                            <h2 className='Default' id='Description' >
-                            {t("Repository.ScreenDescr")}     
-                            </h2>
-                        </div>
-
-                    </div>
-                
-            </div>
-        </StyleRepository>
+            </Container>
+        </>
     );
 } 

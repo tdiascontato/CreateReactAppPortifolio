@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {StyleOldGame} from './StyleOldGame';
 
 function getInitialState() {
-  const state = {};
+  const state = {}; 
   for (let r = 0; r < 3; r++) {
     for (let c = 0; c < 3; c++) {
       state[`${r}-${c}`] = null;
