@@ -1,12 +1,13 @@
 import styled from "styled-components";
-export const Title = styled.h1`
+
+export const H1 = styled.h1`
             text-align: center;
             cursor: default;
             @media(max-width:1100px){
                 font-size: 1.75rem;
             }
 `;
-export const Title2 = styled.h2`
+export const H2 = styled.h2`
             text-align: center;
             cursor: default;
             @media(max-width:1100px){
@@ -14,26 +15,29 @@ export const Title2 = styled.h2`
             }
 `;
 export const Card = styled.section`
-    background-color: #8EAFAF; 
     border: 2px solid #C0D0D0;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: fit-content;
     margin: 0 auto;
     .SpaceTap{
         display: flex;
-        flex-direction : column;
+        @media(max-width: 600px){
+            flex-direction: column;
+        }
     }
 `;
 export const Card2 = styled.section`
     display: flex;
+    flex-direction: column;
     margin: 15px;
     padding: 15px;
     hr{
-        background-color: #8eafaf;
-        width: 5px;
+        background-color: #fff;
+        width: 40px;
         height: calc(100%-50px);
+        border: none;
         border-radius: 20px;
     }
 `;
@@ -44,25 +48,25 @@ export const Container = styled.div`
     height: content;
     text-align: center;
     align-items: center;
-        @media(max-width: 1100px){
+    @media(max-width: 1100px){
         display: flex;
         flex-direction: column;
         grid-gap: 50px;
-        .MobileSection{
-            display: flex;
-        }
-        .WebSection{
-            display: none;
-        }
+    .MobileSection{
+        display: flex;
+    }
+    .WebSection{
+        display: none;
+    }
     }
     .photo{
         display: flex;
-        width: 500px;
+        width: 450px;
         border-radius: 20px;
         margin: 5% auto;
-        @media(max-width: 550px){
-            width: 300px;
-        }
+    @media(max-width: 550px){
+        width: 250px;
+    }
     }
     .MobileSection{
         display: none;
@@ -71,7 +75,7 @@ export const Container = styled.div`
         display: flex;
         align-self: center;
         width: 50vw;
-        height: 50vh;
+        height: 70vh;
         border-radius: 20px;
         background-color: #ACDD93;
         box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6); 
@@ -84,15 +88,15 @@ export const Container = styled.div`
         height: 15px;
         border-radius: 50%;
         position: absolute;       
-        background-color: black;
+        background-color: black; 
     }
-    .ContainerPokedex{
+    .ContainerPokedex{//modifica de outro componente
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
         justify-content: center;
     }
-}
+    }
 `;
 export const Button = styled.button`
         cursor: pointer;
@@ -120,5 +124,11 @@ export const Pokemon = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .DownBellow{
+        margin-top: 5%;
+    }
+    .LastOne{
+        margin-bottom: 5%;
     }
 `;

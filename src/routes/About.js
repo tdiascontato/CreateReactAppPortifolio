@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import Pokedex from '../components/Pokedex/Pokedex.js';
-import {Title, Title2, Container, Card, Card2, Pokemon, Button} from './StyleAbout.js';
+import {Container, Card, Card2, Pokemon, Button,H1, H2} from './StyleAbout.js';
 import OldGame from '../components/OldGame/OldGame.js'
 import photo from '../img/Photo.png';
 import pokemon from '../img/pokemon.png';
@@ -62,39 +62,29 @@ const {t} = useTranslation("global");
 
     return(
         <>
-        <Title>
-            <h1>{t("About.TitleOne")}<br/>{t("About.TitleTwo")}</h1> 
-        </Title>
-
+        <H1>{t("About.TitleOne")}<br/>{t("About.TitleTwo")}</H1>
         <Container> 
             <img src={photo} className="photo" alt="Minha foto"/>
             <Card2>
                 <hr/>
-                <Title2>
-                    <h2 id='Description' >{t("About.DescriptionOne")}</h2>
-                </Title2>
+                <H2 id='Description'>{t("About.DescriptionOne")}</H2>
             </Card2>
         
-            <Card2>
-            <Title2>
-                <h2 id='Description' >{t("About.DescriptionTwo")}</h2>
-            </Title2>
+            <Card2 >
+            <H2 id='Description'>{t("About.DescriptionTwo")}</H2>
             <hr/>
-            </Card2>
-            <Card>
+            </Card2> 
+            <Card id='DescriptionFooter'>
                 <OldGame/>
             </Card>
 
-
-            <Card2 className='MobileSection'>
+            <Card2 className='MobileSection' id='DescriptionFooter'>
             <hr/>
-            <Title2>
-            <h2 className='Default' id='Description' >{t("Repository.Screen")}</h2>
-            <h2 className='Default' id='Description' >{t("Repository.ScreenDescr")}</h2>
-            </Title2>
-            </Card2>
-            <Card>
-                <div className='SpaceTap' onClick={e => handleClick(e)}>
+            <H2 className='Default' id='Description'>{t("Repository.Screen")}</H2>
+            <H2 className='Default' id='Description'>{t("Repository.ScreenDescr")}</H2>
+            </Card2> 
+            <Card id='DescriptionFooter'>
+                <div className='SpaceTap' id='DescriptionFooter' onClick={e => handleClick(e)}>
                 {queue.map((click, i) => (
                     <span className='Circle oscillating' key={i} style={{
                         top: click.clientY, 
@@ -111,23 +101,18 @@ const {t} = useTranslation("global");
             </Card>
             <Card2 className='WebSection'>
             <hr/>
-            <Title2>
-            <h2 className='Default' id='Description' >{t("Repository.Screen")}</h2>
-            <h2 className='Default' id='Description' >{t("Repository.ScreenDescr")}</h2>
-            </Title2>
+            <H2 className='Default'  id='Description' >{t("Repository.Screen")}</H2>
+            <H2 className='Default'  id='Description' >{t("Repository.ScreenDescr")}</H2>
             </Card2>
 
         </Container>
         <Pokemon>
-            <Title2>
-                <h2 id='Description' >{t("About.DescriptionThree")}</h2>
-            </Title2>
-                <img className='Imagem' src={pokemon} alt='50 primeiros Pokémons!'/>
-            <Title2>
-                <h2 className='Default' id='Description' >Pokedex</h2>
-                <h2 className='Default' id='Description' >{t("Repository.Pokedex")}</h2>
-            </Title2>
-                <Button onClick={handleOpen} id='Description' >{showUp ? `${t("Repository.buttomClose")}` : `${t("Repository.buttomOpen")}`}</Button>
+            <H2  className="DownBellow" id='Description'>{t("About.DescriptionThree")}</H2>
+            <H2 id='Description'>{t("About.DescriptionFour")}</H2>
+            <img className='Imagem' src={pokemon} alt='50 primeiros Pokémons!'/>
+            <H2 className='Default' id='Description'>Pokedex</H2>
+            <H2 className='Default' id='Description'>{t("Repository.Pokedex")}</H2>
+                <Button onClick={handleOpen} className="LastOne" id='Description' >{showUp ? `${t("Repository.buttomClose")}` : `${t("Repository.buttomOpen")}`}</Button>
                 {showUp && <Pokedex />}
         </Pokemon>
         </>

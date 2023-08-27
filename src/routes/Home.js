@@ -24,7 +24,7 @@ function Home(){
 
     const {t} = useTranslation("global");
 
-    return(
+    return( 
         <StyleHome> 
             <div className="Home">
                 <div className="leftDiv">

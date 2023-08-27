@@ -20,7 +20,7 @@ export const StyleOldGame = styled.div`
   width: 400px;
   height: 400px;
   @media(max-width: 500px){
-  width: 300px;
+  max-width: 250px;
   }
 }
 

@@ -105,7 +105,7 @@ function OldGame(){
           <div className="Game">
             <div className="Game__board">
               {Array.from({ length: 9 }).map((_, index) => {
-                const key = getKeyFromIndex(index);
+                const key = getKeyFromIndex(index); 
                 return (
                   <button
                     key={index}

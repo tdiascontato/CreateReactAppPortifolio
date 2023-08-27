@@ -7,7 +7,7 @@ const AppStylus = createGlobalStyle`
         box-sizing: border-box;        
     }
     #light{
-        background-color: #e9c790;
+        background-color: #C0D0D0;
         color:  #13444d;
         transition: 1s ease;
     }
@@ -15,13 +15,25 @@ const AppStylus = createGlobalStyle`
         color: black; 
         transition: 1s ease;
     }
+    #light #DescriptionFooter{
+        background-color: #ff7f50;
+        transition: 1s ease;
+    }
+    #DescriptionMenu{
+        color: white;
+    }
     #dark{
-        background-color: #1d1721;
+        background-color: #142e2b;
         color: #b6d0a0;
         transition: 1s ease;
     }
     #dark #Description{
         color: white; 
+        transition: 1s ease;
+    }
+    #dark #DescriptionFooter{
+        background-color: #6b1904;
+        color: black;
         transition: 1s ease;
     }
     .App{
@@ -41,8 +53,7 @@ const AppStylus = createGlobalStyle`
         min-height: 100vh;
     }
     .Footer{
-        min-width: 100%;
-        background: black;
+        min-width: 100%; 
     }
 `;
 export default AppStylus;

@@ -25,7 +25,7 @@ export default function Footer(){
     return(
     
         < StyleFooter>
-            <div className="rodape">
+            <div className="rodape" id="DescriptionFooter">
     
                 <ul className="BoxSocialFooter">
                     <li><Link to = "https://api.whatsapp.com/send?phone=5521990032507&text=Ol%C3%A1!%0AComo%20vai?" target="_blank">
@@ -41,9 +41,8 @@ export default function Footer(){
                         <img src={facebook} alt = 'Meu Facebook' />
                         </Link></li>
                 </ul> 
- 
+  
                 <div className='CopyAndTap'>
-                    <label  id="label" htmlFor="contact">{t("Footer.Copy")}</label>
                     <button  onClick={handleClick} id="contact">{copy}</button>
                 </div>
 

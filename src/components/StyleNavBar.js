@@ -1,68 +1,89 @@
 import styled from "styled-components";
-export const StylusNavBar = styled.div`
-   //all
-    .NavBar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 15px 10%;  
-      }
-    ::-webkit-scrollbar{
-        display: none;
-    } 
-    //part One
-    .Box-Menu{
-        display: flex;
-        gap: 15px;
-        list-style-type: none;
+export const NavBarContainer = styled.header`
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 5% 10%;
+      @media (max-width: 600px){
     }
-    .Box-Menu .link{
-        text-decoration: none;
-        cursor: pointer;
-        font-size: xx-large;
-        -webkit-font-smoothing: antialiased !important;
+      ::-webkit-scrollbar{
+        display: none; 
     }
-    //logo
-    .Logo{
-      display: flex;
-        width: 40px;
-        height: 40px;
-        margin: 0 auto;
-        cursor: pointer;
-    }
-    //part two
-    .RightSide{
-      display: flex;
-      align-items: center;
-      justify-content: right;
-    
-    }
-    .RightSide img {
-        cursor: pointer;
-        height: 40px;
-        width: 40px;
-    }
-    .BoxCheats{
-      list-style-type: none;
-      display: flex;
-      gap: 20px;
-    }
-  
-  @media (max-width: 600px){
-    .NavBar{
-      margin: 15px 25px;
-    }
-    .Box-Menu{
-      align-items: center;
-    }
-    .Box-Menu .link{
-        text-align: center;
-        font-size: x-large;
-        -webkit-font-smoothing: antialiased !important;
-    }
+`;
+export const MenuHamburguer = styled.menu`
+  display: flex;
+  gap: 20px;
+  .Logo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
   }
-  @media(max-width: 400px){
-    .Logo{
+  .Hamburguer{
+    display: none; 
+  }
+  @media(max-width: 600px){
+    .Index{
       display: none;
     }
+    .Hamburguer{
+      display: block;
+    }
+    .close{
+      display: none;
+    }
+    .open{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap:2rem;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 35%;
+      height: 25%;
+      border-radius: 20px;
+      z-index: 1;
+      text-align: center;
+      color: white;
   }
+  }
+`;
+export const BoxMenu = styled.ul`
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+   .Inicio{
+    display: none; 
+    @media(max-width: 600px){
+      display: flex;
+    }
+  }
+`;
+export const Li = styled.li` 
+    cursor: pointer;
+    .link{
+    text-decoration: none;
+    font-size: x-large;
+    -webkit-font-smoothing: antialiased !important;
+    @media(max-width: 600px){
+      font-size: 1.4rem;
+    }
+  }
+  `;
+export const RightSide = styled.ul`
+      .BoxCheats{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 20px;
+      }
+      li{
+        list-style-type: none;
+      }  
+      img{
+        cursor: pointer;
+        height: 40px;
+      width: 40px;
+    }
 `;

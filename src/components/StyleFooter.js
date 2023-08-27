@@ -13,7 +13,7 @@ export const StyleFooter = styled.div`
   .BoxSocialFooter{
     display: flex;
     gap: 20px;
-    margin: 10px auto;
+    margin: 10px auto; 
   }
   .BoxSocialFooter li{
     list-style: none;
@@ -24,23 +24,27 @@ export const StyleFooter = styled.div`
 .CopyAndTap{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin-bottom: 10px;
   gap: 10px;
 }
-.CopyAndTap label{
-  font-weight: 500;
-  color: #c0c0c0;
-}
 .CopyAndTap button{
+  margin: 0 auto;
   cursor: pointer;
   background-color: white;
-  width: 200px;
+  width: fit-content;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: none;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: 'VT323', monospace;
+  font-size: large;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+#TapMessage{
+  font-size: 1.25rem;
+  font-weight: bolder;
+
 }
 `;

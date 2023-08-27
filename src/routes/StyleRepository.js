@@ -1,33 +1,19 @@
 import {styled} from "styled-components";
 
-export const Texto = styled.h1`
+export const H1 = styled.h1`
+    text-align: center;
+    font-size: x-large;
+    cursor: default;
+    padding: 5px 10px;
+    @media(max-width: 500px){
+        font-size: 1.5rem;
+    }
     a{
         font-style: none;
         text-decoration: none;
     }
-    h1{
-        text-align: center;
-        font-size: large;
-        cursor: default;
-        padding: 5px 10px;
-        @media(max-width: 500px){
-            font-size: 1.5rem;
-        }
-    }
-    #white{
-        color: white;
-        cursor: pointer;
-    }
-    #default{
-        cursor: default;
-    }
 `;
-export const Texto2 = styled.h2`
-        a{
-            font-style: none;
-        text-decoration: none;
-        }
-    h2{
+export const H2 = styled.h2`
         text-align: center;
         font-size: medium;
         cursor: default;
@@ -35,27 +21,23 @@ export const Texto2 = styled.h2`
         color: black;
         @media(max-width: 500px){
             font-size: 1rem;
+    }
+        a{
+            font-style: none;
+            text-decoration: none;
         }
-    } 
-    #white{
-        color: white;
-        cursor: pointer;
-    }
-    #default{
-        cursor: default;
-    }
 `;
 export const Button = styled.button`
         cursor: pointer;
         display: flex;
         margin: 20px auto;
-        padding: 15px;
+        padding: 5px;
         background: #88d3ab;
-        height: fit-content;
+        height: 50px;
         max-width: fit-content;
-        font-size: x-large;
+        font-size: large;
         border: none;
-        border-radius: 20px;
+        border-radius: 10px;
 `;
 export const Container = styled.div`
         display: grid;
@@ -68,13 +50,16 @@ export const Container = styled.div`
             flex-direction: column;
         }
         .PomodoroImg{
-            width: 50%;
+            width: 30%;
         }
         .GithubImg{
             width: 35%;
         }
         #php, #mysql{
             width: 20%;
+        }
+        .Format{
+            text-align: justify;
         }
 `;
 export const Card = styled.section`
@@ -84,18 +69,19 @@ export const Card = styled.section`
     border: 2px solid #C0D0D0; 
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
     border-radius: 10px;
-    max-width: fit-content;
-  
+    max-width: 400px;
     margin: 10px auto;
 `;
 export const Card2 = styled.section`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #8EAFAF;
     border: 2px solid #C0D0D0; 
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
     border-radius: 10px;
-    max-width: 10rem;
+    max-width: 25rem;
     height:20rem;
     margin: 10px auto;
 `;
@@ -140,4 +126,5 @@ export const Beliche = styled.section`
 `;
 export const BySide = styled.div`
     display: flex;
+    justify-content: center;
 `;
