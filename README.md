@@ -29,7 +29,7 @@ View repositories and their details.
 List recent informations.
 
 Image:
-[image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/6e3ce606-ab0b-46f4-a049-bfff03b40a31)
+![image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/6e3ce606-ab0b-46f4-a049-bfff03b40a31)
 
 
 Deploy:
