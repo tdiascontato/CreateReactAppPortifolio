@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+Portfolio: Developer Portfolio - PHP and JavaScript
+[image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/61f362be-fc3b-4e61-b668-3f8fd318d2f3)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+Welcome to my developer portfolio showcasing my skills and projects as a software developer with a focus on PHP and JavaScript. This portfolio is built using React.js with TypeScript, featuring extensions for Pomodoro and GitHub functionalities. Styled Components have been employed for styling, offering seamless switching between light and dark themes with interactive elements across the entire system. The portfolio supports both English and Portuguese languages, includes API integrations and project deployments.
 
-## Available Scripts
+Projects
+1. Pomodoro Extension
+The Pomodoro extension is a time management tool developed using React.js and TypeScript. It follows the Pomodoro Technique to improve productivity. Users can set work and break intervals, with a countdown timer and progress tracking.
 
-In the project directory, you can run:
+Features:
+Set customizable work and break durations.
+Visual countdown timer and progress tracking.
+Start, pause, and reset functionality.
 
-### `npm start`
+Image:
+[image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/b21659fd-21ed-4e6f-bdb1-4172fdfe6b90)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Deploy:
+[Deployed Pomodoro Extension](https://tdiaspomodoro.vercel.app/)
 
-### `npm test`
+2. GitHub Extension
+The GitHub extension provides users with a streamlined interface to access their GitHub repositories and commits. It utilizes the GitHub API to retrieve data and display it in an organized manner.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Features:
+Authenticate using GitHub credentials.
+View repositories and their details.
+List recent informations.
 
-### `npm run build`
+Image:
+[image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/6e3ce606-ab0b-46f4-a049-bfff03b40a31)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deploy:
+[Deployed GitHub Extension](https://tdiasgithub.vercel.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Language and Theme Switching
+The portfolio supports seamless switching between English and Portuguese languages, enhancing accessibility for a wider audience. Additionally, users can toggle between light and dark themes for optimal viewing comfort.
 
-### `npm run eject`
+Features:
+Language switcher for English and Portuguese.
+Light and dark theme modes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. API Integration and Examples
+The portfolio integrates external APIs to demonstrate real-world use cases. This section showcases various API integrations, highlighting practical applications of web development skills.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. JavaScript Games
+This section presents interactive JavaScript games developed using vanilla JavaScript. These games serve as a demonstration of my JavaScript programming skills.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Technologies Used
+React.js with TypeScript
+Styled Components for styling
+GitHub API for repository data
+Vanilla JavaScript for Jogo da Velha and Screen
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Conclusion
+Thank you for exploring my developer portfolio. Each project exemplifies my expertise in PHP and JavaScript development. The integration of various technologies, APIs, and interactive elements showcases my ability to create dynamic and engaging web applications. Feel free to reach out to me for any inquiries or collaboration opportunities.
