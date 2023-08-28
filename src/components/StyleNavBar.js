@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const NavBarContainer = styled.header`
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 5% 10%;
+      margin: 2% 10%;
       @media (max-width: 600px){
     }
       ::-webkit-scrollbar{
@@ -19,7 +19,7 @@ export const MenuHamburguer = styled.menu`
     cursor: pointer;
   }
   .Hamburguer{
-    display: none; 
+    display: none;  
   }
   @media(max-width: 600px){
     .Index{
@@ -40,7 +40,7 @@ export const MenuHamburguer = styled.menu`
       top: 10%;
       left: 5%;
       width: 35%;
-      height: 25%;
+      height: 30%;
       border-radius: 20px;
       z-index: 1;
       text-align: center;

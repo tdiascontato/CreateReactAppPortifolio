@@ -82,7 +82,7 @@ const {t} = useTranslation("global");
             <hr/>
             <H2 className='Default' id='Description'>{t("Repository.Screen")}</H2>
             <H2 className='Default' id='Description'>{t("Repository.ScreenDescr")}</H2>
-            </Card2> 
+            </Card2>  
             <Card id='DescriptionFooter'>
                 <div className='SpaceTap' id='DescriptionFooter' onClick={e => handleClick(e)}>
                 {queue.map((click, i) => (

@@ -19,10 +19,13 @@ function NavBar({modeScreen , modeLanguage}){
             <MenuHamburguer id="MenuHamburguer">
                 <Link to="/"><img src={Logo}  alt= 'Logo' className='Logo Index'/></Link>
                 <img src={Logo}  alt= 'Logo' onClick={toggleMenu} className='Logo Hamburguer'/>
-                <BoxMenu className={menuOpen ? 'open' : 'close'} id={menuOpen ? 'DescriptionFooter' : ''}>
-                        <Li><Link to="/" id='DescriptionMenu' className='link Inicio'>Início</Link></Li>
-                        <Li><Link to ='/about' id='DescriptionMenu' className='link'>{t("NavBar.About")}</Link></Li>
-                        <Li><Link to ='/repository'  id='DescriptionMenu' className='link'>{t("NavBar.Works")}</Link></Li>
+                <BoxMenu 
+                className={menuOpen ? 'open' : 'close'} 
+                id={menuOpen ? 'DescriptionMenu' : 'Description'}
+                >
+                        <Li><Link to="/" id='Description' className='link Inicio'>Início</Link></Li>
+                        <Li><Link to ='/about' id='Description' className='link'>{t("NavBar.About")}</Link></Li>
+                        <Li><Link to ='/repository'  id='Description' className='link'>{t("NavBar.Works")}</Link></Li>
                 </BoxMenu>    
             </MenuHamburguer>
             <RightSide>          

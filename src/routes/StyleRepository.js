@@ -33,7 +33,7 @@ export const Button = styled.button`
         margin: 20px auto;
         padding: 5px;
         background: #88d3ab;
-        height: 50px;
+        height: fit-content;
         max-width: fit-content;
         font-size: large;
         border: none;
@@ -42,6 +42,7 @@ export const Button = styled.button`
 export const Container = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
         margin: 20px;
         padding: 5px;
         gap:20px;
@@ -55,35 +56,64 @@ export const Container = styled.div`
         .GithubImg{
             width: 35%;
         }
-        #php, #mysql{
+        #icon{
             width: 20%;
+        }
+        #icon2{
+            width: 45px;
         }
         .Format{
             text-align: justify;
         }
 `;
-export const Card = styled.section`
+export const CardFull = styled.section`
     display: flex;
+    height: fit-content;
     flex-direction: column;
     background-color: #8EAFAF;
-    border: 2px solid #C0D0D0; 
+    border: 10px outset #ff6550;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 400px;
     margin: 10px auto;
 `;
-export const Card2 = styled.section`
+export const CardRigth = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #8EAFAF;
-    border: 2px solid #C0D0D0; 
+    border-right: 15px outset #ff6550;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     max-width: 25rem;
-    height:20rem;
+    height: fit-content;
     margin: 10px auto;
+
+    .Bpomo:hover{
+        background-color: #dc646c;
+        transition: 1s ease;
+    }
+`;
+export const CardLeft = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8EAFAF;
+    border-left: 15px outset #ff6550; 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    max-width: 25rem;
+    height: fit-content;
+    margin: 10px auto;
+    
+    .Bgit:hover{
+    background-color: black;
+    color:white;
+    transition: 1s ease;
+}
+    
 `;
 export const Img = styled.img`
         display: flex;
@@ -126,5 +156,6 @@ export const Beliche = styled.section`
 `;
 export const BySide = styled.div`
     display: flex;
-    justify-content: center;
+    margin:5px auto;
+    gap:3rem;
 `;

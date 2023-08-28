@@ -11,9 +11,17 @@ const AppStylus = createGlobalStyle`
         color:  #13444d;
         transition: 1s ease;
     }
-    #light #Description{
-        color: black; 
+    #light #Description{     
+        color: #012925; 
         transition: 1s ease;
+    }
+    #light #DescriptionMenu{
+        color: #4a2424;
+        background: #ff7f50;
+        transition: 1s ease;
+        @media(min-width: 600px){
+            background: none;
+        }
     }
     #light #DescriptionFooter{
         background-color: #ff7f50;
@@ -28,8 +36,16 @@ const AppStylus = createGlobalStyle`
         transition: 1s ease;
     }
     #dark #Description{
-        color: white; 
+        color: #ffdc73; //eabf3e; //ffe561;
         transition: 1s ease;
+    }
+    #dark #DescriptionMenu{
+        color: #49432b  ;
+        background: #6b1904;
+        transition: 1s ease;
+        @media(min-width: 600px){
+            background: none;
+        }
     }
     #dark #DescriptionFooter{
         background-color: #6b1904;
