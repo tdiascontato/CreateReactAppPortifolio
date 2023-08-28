@@ -1,5 +1,5 @@
 Portfolio: Developer Portfolio - PHP and JavaScript
-[image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/61f362be-fc3b-4e61-b668-3f8fd318d2f3)
+![image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/61f362be-fc3b-4e61-b668-3f8fd318d2f3)
 
 Overview
 Welcome to my developer portfolio showcasing my skills and projects as a software developer with a focus on PHP and JavaScript. This portfolio is built using React.js with TypeScript, featuring extensions for Pomodoro and GitHub functionalities. Styled Components have been employed for styling, offering seamless switching between light and dark themes with interactive elements across the entire system. The portfolio supports both English and Portuguese languages, includes API integrations and project deployments.
