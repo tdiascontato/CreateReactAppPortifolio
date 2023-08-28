@@ -14,13 +14,42 @@ export const H2 = styled.h2`
                 font-size: 1.5rem;
             }
 `;
+export const CardRigth = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 30px outset #ff6550;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 50vh;
+    margin: 50px auto;
+    padding: 0 20px;
+    @media(max-width:800px){
+        flex-direction: column;
+    }
+`;
+export const CardLeft = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 30px outset #ff6550;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 50vh;
+    margin: 50px auto;
+    padding: 0 20px;
+    @media(max-width:800px){
+        flex-direction: column;
+    }
+`;
+export const Beliche = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 export const Card = styled.section`
     border: 2px solid #C0D0D0;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    padding: 5px 10px;
     border-radius: 15px;
-    width: fit-content;
-    margin: 0 auto;
     .SpaceTap{
         display: flex;
         @media(max-width: 600px){
@@ -28,22 +57,9 @@ export const Card = styled.section`
         }
     }
 `;
-export const Card2 = styled.section`
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    padding: 15px;
-    hr{
-        background-color: #fff;
-        width: 40px;
-        height: calc(100%-50px);
-        border: none;
-        border-radius: 20px;
-    }
-`;
 export const Container = styled.div`
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display:flex;
+    flex-direction: column;
     margin: 1rem 3rem;
     height: content;
     text-align: center;
@@ -53,10 +69,7 @@ export const Container = styled.div`
         flex-direction: column;
         grid-gap: 50px;
     .MobileSection{
-        display: flex;
-    }
-    .WebSection{
-        display: none;
+        display: flex; 
     }
     }
     .photo{

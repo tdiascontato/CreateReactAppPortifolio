@@ -31,7 +31,7 @@ const {t} = useTranslation("global");
                         <H1><Link id="Description" to= 'https://tdiascontato.000webhostapp.com/'>{t("Repository.Blog")}</Link></H1>
                         <H2 className='Format' id="Description">{t("Repository.BlogDescription")}</H2>
                         <BySide>
-                        <H2><Link id="Description" to= 'github.com/tdiascontato'>Github!</Link></H2>
+                        <H2><Link id="Description" to= 'https://github.com/tdiascontato/BlogPHP'>Github!</Link></H2>
                         <H2><Link id="Description" to= 'https://tdiascontato.000webhostapp.com/'>Deploy!</Link></H2>
                         </BySide>
                         <H2 id="Description">{t("Repository.BlogTecnologies")}</H2> 

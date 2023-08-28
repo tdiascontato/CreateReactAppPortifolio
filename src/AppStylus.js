@@ -40,7 +40,7 @@ const AppStylus = createGlobalStyle`
         transition: 1s ease;
     }
     #dark #DescriptionMenu{
-        color: #49432b  ;
+        color: #49432b  ;//# //# //# // // // //
         background: #6b1904;
         transition: 1s ease;
         @media(min-width: 600px){
@@ -48,7 +48,7 @@ const AppStylus = createGlobalStyle`
         }
     }
     #dark #DescriptionFooter{
-        background-color: #6b1904;
+        background-color: #2C0C10 ;
         color: black;
         transition: 1s ease;
     }

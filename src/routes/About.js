@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import Pokedex from '../components/Pokedex/Pokedex.js';
-import {Container, Card, Card2, Pokemon, Button,H1, H2} from './StyleAbout.js';
+import {Container,CardRigth, CardLeft, Beliche, Card, Pokemon, Button,H1, H2} from './StyleAbout.js';
 import OldGame from '../components/OldGame/OldGame.js'
 import photo from '../img/Photo.png';
 import pokemon from '../img/pokemon.png';
@@ -64,27 +64,25 @@ const {t} = useTranslation("global");
         <>
         <H1>{t("About.TitleOne")}<br/>{t("About.TitleTwo")}</H1>
         <Container> 
+            <CardRigth>
             <img src={photo} className="photo" alt="Minha foto"/>
-            <Card2>
-                <hr/>
-                <H2 id='Description'>{t("About.DescriptionOne")}</H2>
-            </Card2>
+            <H2 id='Description'>{t("About.DescriptionOne")}</H2>
+            </CardRigth> 
         
-            <Card2 >
+            <CardLeft >
             <H2 id='Description'>{t("About.DescriptionTwo")}</H2>
-            <hr/>
-            </Card2> 
-            <Card id='DescriptionFooter'>
+            <Card >
                 <OldGame/>
             </Card>
+            </CardLeft> 
 
-            <Card2 className='MobileSection' id='DescriptionFooter'>
-            <hr/>
+            <CardRigth className='MobileSection' id='DescriptionFooter'>
             <H2 className='Default' id='Description'>{t("Repository.Screen")}</H2>
             <H2 className='Default' id='Description'>{t("Repository.ScreenDescr")}</H2>
-            </Card2>  
-            <Card id='DescriptionFooter'>
-                <div className='SpaceTap' id='DescriptionFooter' onClick={e => handleClick(e)}>
+            </CardRigth>  
+            
+            <CardRigth>
+            <div className='SpaceTap' id='DescriptionFooter' onClick={e => handleClick(e)}>
                 {queue.map((click, i) => (
                     <span className='Circle oscillating' key={i} style={{
                         top: click.clientY, 
@@ -98,12 +96,11 @@ const {t} = useTranslation("global");
                 <Button onClick={handleDel}>CTRL + Z!</Button>
                 <Button onClick={handleBackAgain}>CTRL + SHIFT + Z!</Button>
             </div>
-            </Card>
-            <Card2 className='WebSection'>
-            <hr/>
-            <H2 className='Default'  id='Description' >{t("Repository.Screen")}</H2>
-            <H2 className='Default'  id='Description' >{t("Repository.ScreenDescr")}</H2>
-            </Card2>
+            <Beliche>
+                <H2 className='Default'  id='Description' >{t("Repository.Screen")}</H2>
+                <H2 className='Default'  id='Description' >{t("Repository.ScreenDescr")}</H2>
+            </Beliche>
+            </CardRigth>
 
         </Container>
         <Pokemon>
