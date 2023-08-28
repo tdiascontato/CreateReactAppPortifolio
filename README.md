@@ -14,7 +14,7 @@ Visual countdown timer and progress tracking.
 Start, pause, and reset functionality.
 
 Image:
-[image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/b21659fd-21ed-4e6f-bdb1-4172fdfe6b90)
+![image](https://github.com/tdiascontato/CreateReactAppPortifolio/assets/98658691/b21659fd-21ed-4e6f-bdb1-4172fdfe6b90)
 
 
 Deploy:
