@@ -22,7 +22,7 @@ const {t} = useTranslation("global");
 
     return( 
         <>
-            <H1 id='Description'>{t("Repository.Title")}</H1>
+            <H1>{t("Repository.Title")}</H1>
                 
             <Container>
 

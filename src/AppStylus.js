@@ -12,19 +12,19 @@ const AppStylus = createGlobalStyle`
         transition: 1s ease;
     }
     #light #Description{     
-        color: #012925; 
+        color: #fff;    
         transition: 1s ease;
     }
     #light #DescriptionMenu{
         color: #4a2424;
-        background: #ff7f50;
+        background: #3e5353;
         transition: 1s ease;
         @media(min-width: 600px){
             background: none;
         }
     }
     #light #DescriptionFooter{
-        background-color: #ff7f50;
+        background-color: #3e5353;
         transition: 1s ease;
     }
     #DescriptionMenu{
@@ -41,14 +41,14 @@ const AppStylus = createGlobalStyle`
     }
     #dark #DescriptionMenu{
         color: #49432b  ;//# //# //# // // // //
-        background: #6b1904;
+        background: #0c1b19;
         transition: 1s ease;
         @media(min-width: 600px){
             background: none;
         }
     }
     #dark #DescriptionFooter{
-        background-color: #2C0C10 ;
+        background-color: #0c1b19 ;
         color: black;
         transition: 1s ease;
     }
