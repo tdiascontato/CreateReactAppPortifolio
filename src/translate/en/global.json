@@ -11,7 +11,7 @@
     "About": { 
         "TitleOne": "Hey!",
         "TitleTwo": "I'm Tiago!",
-        "DescriptionOne": "I'm Tiago, I'm working Typescript and PHP since I decided to leave the Magisterium.",
+        "DescriptionOne": "I'm Tiago, I study Typescript and PHP since I decided to leave the Magisterium.",
         "DescriptionTwo": "It all started with creating games and challenges with the DOM!",
         "DescriptionThree": "I felt compelled to solve these and other challenges.",
         "DescriptionFour": "Today I make sites with PHP and Reactjs, with or without Database!"
@@ -28,7 +28,8 @@
         "buttomClose": "Close!",
         "Blog": "PHP Website with Dashboard Panel",
         "BlogDescription": "This PHP site combines a captivating blog layout with an efficient dashboard, allowing readers to intuitively explore articles and providing administrators with tools to manage content, schedule posts and analyze metrics. A complete platform for creating, publishing and monitoring content.",
-        "BlogTecnologies": "Tecnologies:"
+        "BlogTecnologies": "Tecnologies:",
+        "Broker": "Website for Brokers, with Dashboard for Content Control:"
     },
     "Footer": {
         "Copy": "Tap to Copy Me!",
