@@ -65,10 +65,22 @@ export const Container = styled.div`
         .Format{
             text-align: justify;
         }
+        `;
+export const Master = styled.div`
+        display: flex;
+        align-items: center;
+        height: fit-content; 
+        flex-direction: column;
+        background-color: #8EAFAF;
+        border: 10px outset #ff6550;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+        width: 80vw;
+        margin: 10px auto;
 `;
 export const CardFull = styled.section`
     display: flex;
-    height: fit-content;
+    height: fit-content; 
     flex-direction: column;
     background-color: #8EAFAF;
     border: 10px outset #ff6550;
@@ -132,6 +144,21 @@ export const Img = styled.img`
 export const Img2 = styled.img`
         display: flex;
         width: 100%;
+        margin: 0 auto;   
+        border-radius: 10px;
+        
+        filter: brightness(0.8); 
+        transition: filter 0.5s ease-in-out;
+        &:hover{
+            filter: brightness(1);
+        }
+        @media(max-width:1030px){
+            filter: brightness(1);
+        }
+`;
+export const Img3 = styled.img`
+        display: flex;
+        width: 80vw;
         margin: 0 auto;   
         border-radius: 10px;
         
