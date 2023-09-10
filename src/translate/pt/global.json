@@ -11,7 +11,7 @@
     "About": {
         "TitleOne": "Olá!",
         "TitleTwo": "Eu sou o Tiago!",
-        "DescriptionOne": "Sou o Tiago, programo em Typescript, Nodejs e PHP desde que decidi sair do Magistério.",
+        "DescriptionOne": "Sou o Tiago, estudo Typescript, Nodejs e PHP desde que decidi sair do Magistério.",
         "DescriptionTwo": "Tudo começou com a criação de jogos e desafios com o DOM!",
         "DescriptionThree": "Me senti instigado a resolver esses e outros outros desafios.",
         "DescriptionFour": "Hoje faço sites com PHP e Reactjs, com ou sem Banco de Dados!"
@@ -28,7 +28,8 @@
         "buttomClose": "Fechar!",
         "Blog": "Site PHP com Painel Dashboard",
         "BlogDescription": "Este site em PHP combina um layout de blog cativante com um painel de controle eficiente, permitindo que os leitores explorem artigos de forma intuitiva e oferecendo aos administradores ferramentas para gerenciar conteúdo, agendar postagens e analisar métricas. Uma plataforma completa para a criação, publicação e monitoramento de conteúdo.",
-        "BlogTecnologies": "Tecnologias:"
+        "BlogTecnologies": "Tecnologias:",
+        "Broker": "Site para Corretores, com Dashboard para controle de Conteúdo"
     },
     "Footer": {
         "Copy": "Aperte para me Copiar!",
