@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {Container, H1, H2, Button, Img, Img2, Beliche, BySide, CardFull, CardRigth, CardLeft} from './StyleRepository.js';
+import {Container, Master, H1, H2, Button, Img, Img2, Beliche, BySide, CardFull, CardRigth, CardLeft} from './StyleRepository.js';
 import php from '../img/php.png';
+import Broker from '../img/Broker.png';
 import Blog from '../img/Blog.png';
 import react from '../img/react.png';
 import mysql from '../img/mysql.png';
@@ -24,8 +25,14 @@ const {t} = useTranslation("global");
         <>
             <H1>{t("Repository.Title")}</H1>
                 
-            <Container>
+                    <Master>
+                        <Img2 id='BrokerImg' src={Broker}/> 
+                        <H1><Link id="Description" to= 'https://tdiasdeveloper.000webhostapp.com/'>{t("Repository.Broker")}</Link></H1>
+                        <H2 className='Format' id="Description">{t("Repository.BlogDescription")}</H2>
+                        <H2><Link id="Description" to= 'https://tdiasdeveloper.000webhostapp.com/'>Deploy!</Link></H2>
+                    </Master>
 
+            <Container>
                     <CardFull className="Blog">
                         <Img2 id='BlogImg' src={Blog}/>
                         <H1><Link id="Description" to= 'https://tdiascontato.000webhostapp.com/'>{t("Repository.Blog")}</Link></H1>
@@ -36,7 +43,7 @@ const {t} = useTranslation("global");
                         </BySide>
                         <H2 id="Description">{t("Repository.BlogTecnologies")}</H2> 
                         <BySide><Img id="icon" src={php} alt="PHP!"/> <Img id="icon" src={mysql} alt="Mysql!"/></BySide>
-                    </CardFull>
+                    </CardFull> 
                     <Beliche>
                         <CardRigth className="PomodoroSpace">
                             <Link to= 'https://tdiaspomodoro.vercel.app/' style={linkStyle}>
