@@ -79,7 +79,7 @@ export const Master = styled.div`
         border-radius: 20px;
 
         &&.first{
-            margin: 5rem 2rem;
+            margin: 5rem;
             width: fit-content;
         }
         &&.first img{
