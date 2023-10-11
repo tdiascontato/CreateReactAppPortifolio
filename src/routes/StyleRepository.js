@@ -79,8 +79,8 @@ export const Master = styled.div`
         border-radius: 20px;
 
         &&.first{
-            margin: 5rem;
-            width: fit-content;
+            margin: 3rem auto;
+            width: 60vw;
         }
         &&.first img{
             max-height:70vh;
