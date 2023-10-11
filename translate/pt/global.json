@@ -1,0 +1,40 @@
+{
+    "NavBar": {
+        "Home": "Início",
+        "About": "Sobre",
+        "Works": "Trabalhos"
+    },
+    "Home": {
+        "Title": "Olá! Sou o Tiago, desenvolvedor de softwares.",
+        "Description": "Sou professor de matemática e programo em Node.js, Typescript, Javascript e PHP!"
+    },
+    "About": {
+        "TitleOne": "Olá!",
+        "TitleTwo": "Eu sou o Tiago!",
+        "DescriptionOne": "Sou o Tiago, estudo Typescript, Nodejs e PHP desde que decidi sair do Magistério.",
+        "DescriptionTwo": "Tudo começou com a criação de jogos e desafios com o DOM!",
+        "DescriptionThree": "Me senti instigado a resolver esses e outros outros desafios.",
+        "DescriptionFour": "Hoje faço sites com PHP e Reactjs, com ou sem Banco de Dados!"
+    },
+    "Repository": {
+        "Title": "Meus trabalhos:",
+        "Pomodoro": "Use o método Pomodoro para estudar:",
+        "Github": "Pesquisa de Devs pelo API do Github:",
+        "Pokedex": "Pequena lista dos 25 primeiros monstrinhos pego por API.",
+        "Screen": "TOQUE!",
+        "ScreenDescr": "Tente fechar o espaço com os pontos! Fixe os pontos e os vejam variar!",
+        "buttomVisit": "Página de Deploy!",
+        "buttomOpen": "Abrir!",
+        "buttomClose": "Fechar!",
+        "Blog": "Site PHP com Painel Dashboard",
+        "BlogDescription": "Este site em PHP combina um layout de blog cativante com um painel de controle eficiente, permitindo que os leitores explorem artigos de forma intuitiva e oferecendo aos administradores ferramentas para gerenciar conteúdo, agendar postagens e analisar métricas. Uma plataforma completa para a criação, publicação e monitoramento de conteúdo.",
+        "BlogTecnologies": "Tecnologias:",
+        "Broker": "Site para Corretores, com Dashboard para controle de Conteúdo",
+        "TitleBee":"Ecommerce Mercado Pago",
+        "BeeDescr": "Projeto de Ecommerce desenvolvido com Node.js e React, que permite aos usuários se cadastrar para vender até 2 itens particulares apenas fornecendo a chave pública e a chave de acesso do Mercado Pago. Os usuários também podem comprar itens sem a necessidade de cadastro e os vendedores recebem em suas rescpectivas carteiras Mercado Pago, e os pagamentos são processados pelo Mercado Pago. O projeto utiliza as bibliotecas crypto e bcrypt para criptografar as chaves e senhas. Todo o código foi escrito em JavaScript."
+    },
+    "Footer": {
+        "Copy": "Aperte para me Copiar!",
+        "Button": "Você me copiou!"
+    }
+}

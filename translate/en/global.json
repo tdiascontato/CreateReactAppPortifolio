@@ -1,0 +1,40 @@
+{
+    "NavBar": {
+        "Home": "Home",
+        "About": "About",
+        "Works": "Works"
+    },
+    "Home": {
+        "Title": "Hello! I'm Tiago, software developer.",
+        "Description": "I'm a math teacher and I'm working in Javascript, Node.js, PHP and Typescript!"
+    },
+    "About": { 
+        "TitleOne": "Hey!",
+        "TitleTwo": "I'm Tiago!",
+        "DescriptionOne": "I'm Tiago, I study Typescript and PHP since I decided to leave the Magisterium.",
+        "DescriptionTwo": "It all started with creating games and challenges with the DOM!",
+        "DescriptionThree": "I felt compelled to solve these and other challenges.",
+        "DescriptionFour": "Today I make sites with PHP and Reactjs, with or without Database!"
+    },
+    "Repository": { 
+        "Title": "My works:",
+        "Pomodoro": "Use the Pomodoro method to study:",
+        "Github": "Search for Devs via Github API:", 
+        "Pokedex": "Shortlist of the first 25 little monsters caught by API.",
+        "Screen": "TOUCH!",
+        "ScreenDescr": "Try to close the space with the dots! Fix the dots and watch them vary!",
+        "buttomVisit": "Deploy page!",
+        "buttomOpen": "Open!",
+        "buttomClose": "Close!",
+        "Blog": "PHP Website with Dashboard Panel",
+        "BlogDescription": "This PHP site combines a captivating blog layout with an efficient dashboard, allowing readers to intuitively explore articles and providing administrators with tools to manage content, schedule posts and analyze metrics. A complete platform for creating, publishing and monitoring content.",
+        "BlogTecnologies": "Tecnologies:",
+        "Broker": "Website for Brokers, with Dashboard for Content Control:",
+        "TitleBee":"Ecommerce Mercado Pago - Latin America Payment Service",
+        "BeeDescr": "Ecommerce project developed with Node.js and React, which allows users to register to sell up to 2 private items just by providing the public key and the Mercado Pago access key. Users can also purchase items without the need to register and sellers receive them in their respective Mercado Pago wallets, and payments are processed by Mercado Pago. The project uses the crypto and bcrypt libraries to encrypt keys and passwords. All code was written in JavaScript."
+    },
+    "Footer": {
+        "Copy": "Tap to Copy Me!",
+        "Button": "You copied me!"
+    }
+}
