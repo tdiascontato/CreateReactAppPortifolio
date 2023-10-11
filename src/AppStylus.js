@@ -14,6 +14,8 @@ const AppStylus = createGlobalStyle`
     #light #Description{     
         color: #fff;    
         transition: 1s ease;
+        text-decoration: none;
+        list-style: none;
     }
     #light #DescriptionMenu{
         color: #4a2424;
@@ -38,6 +40,8 @@ const AppStylus = createGlobalStyle`
     #dark #Description{
         color: #ffdc73; //eabf3e; //ffe561;
         transition: 1s ease;
+        text-decoration: none;
+        list-style: none;
     }
     #dark #DescriptionMenu{
         color: #49432b  ;//# //# //# // // // //

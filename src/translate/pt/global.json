@@ -29,7 +29,9 @@
         "Blog": "Site PHP com Painel Dashboard",
         "BlogDescription": "Este site em PHP combina um layout de blog cativante com um painel de controle eficiente, permitindo que os leitores explorem artigos de forma intuitiva e oferecendo aos administradores ferramentas para gerenciar conteúdo, agendar postagens e analisar métricas. Uma plataforma completa para a criação, publicação e monitoramento de conteúdo.",
         "BlogTecnologies": "Tecnologias:",
-        "Broker": "Site para Corretores, com Dashboard para controle de Conteúdo"
+        "Broker": "Site para Corretores, com Dashboard para controle de Conteúdo",
+        "TitleBee":"Ecommerce Mercado Pago",
+        "BeeDescr": "Projeto de Ecommerce desenvolvido com Node.js e React, que permite aos usuários se cadastrar para vender até 2 itens particulares apenas fornecendo a chave pública e a chave de acesso do Mercado Pago. Os usuários também podem comprar itens sem a necessidade de cadastro e os vendedores recebem em suas rescpectivas carteiras Mercado Pago, e os pagamentos são processados pelo Mercado Pago. O projeto utiliza as bibliotecas crypto e bcrypt para criptografar as chaves e senhas. Todo o código foi escrito em JavaScript."
     },
     "Footer": {
         "Copy": "Aperte para me Copiar!",

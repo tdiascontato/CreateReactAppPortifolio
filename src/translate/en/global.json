@@ -29,7 +29,9 @@
         "Blog": "PHP Website with Dashboard Panel",
         "BlogDescription": "This PHP site combines a captivating blog layout with an efficient dashboard, allowing readers to intuitively explore articles and providing administrators with tools to manage content, schedule posts and analyze metrics. A complete platform for creating, publishing and monitoring content.",
         "BlogTecnologies": "Tecnologies:",
-        "Broker": "Website for Brokers, with Dashboard for Content Control:"
+        "Broker": "Website for Brokers, with Dashboard for Content Control:",
+        "TitleBee":"Ecommerce Mercado Pago - Latin America Payment Service",
+        "BeeDescr": "Ecommerce project developed with Node.js and React, which allows users to register to sell up to 2 private items just by providing the public key and the Mercado Pago access key. Users can also purchase items without the need to register and sellers receive them in their respective Mercado Pago wallets, and payments are processed by Mercado Pago. The project uses the crypto and bcrypt libraries to encrypt keys and passwords. All code was written in JavaScript."
     },
     "Footer": {
         "Copy": "Tap to Copy Me!",

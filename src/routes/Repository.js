@@ -10,6 +10,7 @@ import mysql from '../img/mysql.png';
 import github from '../img/githubProject.png';
 import typescript from '../img/typescript.png';
 import pomodoro from '../img/pomodoroProject.png';
+import bee from '../img/Bee.png';
 
 export default function Repository(){
   
@@ -25,10 +26,23 @@ const {t} = useTranslation("global");
         <>
             <H1>{t("Repository.Title")}</H1>
                 
+                    <Master className="first">
+                    <Link id="Description" to= 'https://github.com/tdiascontato/ShoppingMercadoPago'>
+                        <Img2 id='Bee Shop Mercado Pago' src={bee}/>
+                    </Link >
+                    <Link id="Description" to= 'https://github.com/tdiascontato/ShoppingMercadoPago'>
+                        <H1>{t("Repository.TitleBee")}</H1>
+                        <H2>{t("Repository.BeeDescr")}</H2>
+                        <H2 className="github" id="Description">Github</H2>
+                    </Link >
+                    </Master>
+
                     <Master>
-                        <Img2 id='BrokerImg' src={Broker}/> 
-                        <H1><Link id="Description" to= 'https://tdiasdeveloper.000webhostapp.com/'>{t("Repository.Broker")}</Link></H1>
-                        <H2 className='Format' id="Description">{t("Repository.BlogDescription")}</H2>
+                    <Link id="Description" to= 'https://tdiasdeveloper.000webhostapp.com/'>
+                        <Img2 id='BrokerImg' src={Broker}/>
+                        <H1>{t("Repository.Broker")}</H1>
+                    </Link >
+                        <H2 className='Format'>{t("Repository.BlogDescription")}</H2>
                         <H2><Link id="Description" to= 'https://tdiasdeveloper.000webhostapp.com/'>Deploy!</Link></H2>
                     </Master>
 
@@ -36,10 +50,10 @@ const {t} = useTranslation("global");
                     <CardFull className="Blog">
                         <Img2 id='BlogImg' src={Blog}/>
                         <H1><Link id="Description" to= 'https://tdiascontato.000webhostapp.com/'>{t("Repository.Blog")}</Link></H1>
-                        <H2 className='Format' id="Description">{t("Repository.BlogDescription")}</H2>
+                        <H2 className='Format'>{t("Repository.BlogDescription")}</H2>
                         <BySide>
                         <H2><Link id="Description" to= 'https://github.com/tdiascontato/BlogPHP'>Github!</Link></H2>
-                        <H2><Link id="Description" to= 'https://tdiascontato.000webhostapp.com/'>Deploy!</Link></H2>
+                        <H2><Link id="Description"to= 'https://tdiascontato.000webhostapp.com/'>Deploy!</Link></H2>
                         </BySide>
                         <H2 id="Description">{t("Repository.BlogTecnologies")}</H2> 
                         <BySide><Img id="icon" src={php} alt="PHP!"/> <Img id="icon" src={mysql} alt="Mysql!"/></BySide>

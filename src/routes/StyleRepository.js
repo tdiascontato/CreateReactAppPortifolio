@@ -68,15 +68,30 @@ export const Container = styled.div`
         `;
 export const Master = styled.div`
         display: flex;
-        align-items: center;
-        height: fit-content; 
         flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        height: fit-content; 
+        margin: 0 auto;
         background-color: #8EAFAF;
         border: 10px outset #ff6550;
         box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
         border-radius: 20px;
-        width: 80vw;
-        margin: 10px auto;
+
+        &&.first{
+            margin: 5rem auto;
+            width: fit-content;
+        }
+        &&.first img{
+            max-height:70vh;
+        }
+        &&.first h2{
+            text-align: justify;
+            &.github{
+                text-align:center;
+                cursor: pointer;
+            }
+        }
 `;
 export const CardFull = styled.section`
     display: flex;
