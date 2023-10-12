@@ -74,6 +74,7 @@ export const Container = styled.div`
         @media(max-width:1030px){
             display: flex;
             flex-direction: column;
+            gap: 5rem;
         }
         #icon{
             width: 15%;
