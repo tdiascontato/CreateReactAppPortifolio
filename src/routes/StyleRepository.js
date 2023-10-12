@@ -65,7 +65,7 @@ export const BySide = styled.div`
 export const Container = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 60vw;
+        width: 90vw;
         //place-items:center;
         //padding: 2rem auto;
         margin: 5rem auto;
