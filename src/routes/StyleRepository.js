@@ -27,126 +27,11 @@ export const H2 = styled.h2`
             text-decoration: none;
         }
 `;
-export const Button = styled.button`
-        cursor: pointer;
-        display: flex;
-        margin: 20px auto;
-        padding: 5px;
-        background: #88d3ab;
-        height: fit-content;
-        max-width: fit-content;
-        font-size: large;
-        border: none;
-        border-radius: 10px;
-`;
-export const Container = styled.div`
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        margin: 20px;
-        padding: 5px;
-        gap:20px;
-        @media(max-width:1030px){
-            display: flex;
-            flex-direction: column;
-        }
-        .PomodoroImg{
-            width: 30%;
-        }
-        .GithubImg{
-            width: 35%;
-        }
-        #icon{
-            width: 20%;
-        }
-        #icon2{
-            width: 45px;
-        }
-        .Format{
-            text-align: justify;
-        }
-        `;
-export const Master = styled.div`
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80vw;
-        height: fit-content; 
-        margin: 0 auto;
-        background-color: #8EAFAF;
-        border: 10px outset #ff6550;
-        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-        border-radius: 20px;
-
-        &&.first{
-            margin: 3rem auto;
-            width: 60vw;
-        }
-        &&.first img{
-            max-height:70vh;
-        }
-        &&.first h2{
-            text-align: justify;
-            &.github{
-                text-align:center;
-                cursor: pointer;
-            }
-        }
-`;
-export const CardFull = styled.section`
-    display: flex;
-    height: fit-content; 
-    flex-direction: column;
-    background-color: #8EAFAF;
-    border: 10px outset #ff6550;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    max-width: 400px;
-    margin: 10px auto;
-`;
-export const CardRigth = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #8EAFAF;
-    border-right: 15px outset #ff6550;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    max-width: 25rem;
-    height: fit-content;
-    margin: 10px auto;
-
-    .Bpomo:hover{
-        background-color: #dc646c;
-        transition: 1s ease;
-    }
-`;
-export const CardLeft = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #8EAFAF;
-    border-left: 15px outset #ff6550; 
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    max-width: 25rem;
-    height: fit-content;
-    margin: 10px auto;
-    
-    .Bgit:hover{
-    background-color: black;
-    color:white;
-    transition: 1s ease;
-}
-    
-`;
 export const Img = styled.img`
         display: flex;
         margin: 0 auto;   
         border-radius: 10px;
-        
+
         filter: brightness(0.8); 
         transition: filter 0.5s ease-in-out;
         &:hover{
@@ -171,33 +56,57 @@ export const Img2 = styled.img`
             filter: brightness(1);
         }
 `;
-export const Img3 = styled.img`
-        display: flex;
-        width: 80vw;
-        margin: 0 auto;   
-        border-radius: 10px;
-        
-        filter: brightness(0.8); 
-        transition: filter 0.5s ease-in-out;
-        &:hover{
-            filter: brightness(1);
-        }
-        @media(max-width:1030px){
-            filter: brightness(1);
-        }
-`;
-export const Beliche = styled.section`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:1fr 1fr;
-    
-    @media(max-width:1030px){
-        display: flex;
-        flex-direction: column;
-    }
-`;
+
 export const BySide = styled.div`
     display: flex;
     margin:5px auto;
     gap:3rem;
+`;
+export const Container = styled.div`
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60vw;
+        //place-items:center;
+        //padding: 2rem auto;
+        margin: 5rem auto;
+        gap: 3%;
+        
+        @media(max-width:1030px){
+            display: flex;
+            flex-direction: column;
+        }
+        #icon{
+            width: 15%;
+        }
+        .Format{
+            text-align: justify;
+        }
+`;
+export const West = styled.div`
+        display: flex;
+        background-color: #8EAFAF;
+
+        border: 10px outset #ff6550;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+`;
+export const CardSuperior = styled.div`
+        display: flex;
+        flex-direction: column;
+        background-color: #8EAFAF;
+        align-items:center;
+        margin-bottom: 0;
+
+        border: 10px outset #ff6550;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+`;
+export const CardFull = styled.section`
+        display: flex;
+        flex-direction: column;
+        background-color: #8EAFAF;
+
+        border: 10px outset #ff6550;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
 `;
